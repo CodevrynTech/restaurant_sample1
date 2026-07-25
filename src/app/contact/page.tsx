@@ -75,7 +75,7 @@ export default function Contact() {
           <img 
             className="w-full h-full object-cover" 
             alt="Lumira restaurant exterior at dusk" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG8bLS3RAaGrkRJipZDpZ6_4lRUGPWkuOYYXC4PlroOKcM4IO7FRi0HdWJQUU95V4oqjMYHR6EdIcy4A0s07lop-pv6YHvwFZxxtUDFDK5fFITNQmyR6kgMBZ-gdM53kWNj30Y2o9z1o4wrZ3IfMLya9O1PjrEeGvWpOSxL3W3cGdA8Ti-vdjGvucvqbIpFTmLZTb5h2n_q50sFRdN0eqtrq-ZvaxLRTcYu_dUYVt3CIikIBtDfsz0LqYFezoUWrpeY_EvQZgpzlb0" 
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=2560" 
           />
         </div>
         <div className="relative z-20 text-center text-white px-margin-mobile">
@@ -130,7 +130,7 @@ export default function Contact() {
                   <img 
                     className="w-full h-full object-cover opacity-60" 
                     alt="Map of Monaco" 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo2ChglOr2x6KYZsKyQ_-7snYGy7zLSZUgkUMYwuhMrf59zPb2p0zXIZcIp8xtRnwzASe-_lHpio2dNyrXekv9DRyXyujeT-aX6oLnyXlZOU_bv8BP4ZxHU_nVCkZhfdFGuxiYH6tchUA2yiVsw0AifzER5xd4Xsi8Jn2W7jESAxnK7in0uy4Xi93QoEyw5yoavFxv3kIrsLKkXxxvIBebyYVvCp8eolJPHs2EF_o5ucMgiGvpycNdrKbbdhRE-KD28pBzUCkA_WXA" 
+                    src="https://images.unsplash.com/photo-1414235077428-338988a2e8c0?auto=format&fit=crop&q=80&w=2560" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent"></div>
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">

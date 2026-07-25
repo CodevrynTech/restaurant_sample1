@@ -47,7 +47,7 @@ export default function Story() {
           <div 
             ref={heroRef}
             className="w-full h-[120%] -top-[10%] relative bg-cover bg-center" 
-            style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuASMUPJ0DW0DznfyNjpRKZSt75LnhbBNKlMB69ZLP3mueJPHtrJsiAKbxq5fsbScZGOAMMI6XDaSA4IyK092xWKIkmVBZTL2OfMtlufi1aD8Ym4eAL5oUDmGeURRvbFmuN38Rl6mGE4Hqy6AWlzjqAKV5wHIHCpZCU5ldLw2orNmCc0DU7zDUB_9caHeIkEnuFlt0DAy2TAxntou0XkGjm3skPthK5m56Y47XE9rpBUu-oqJIhAClnFdlTCDkDWLighD1TqelUbFgnp')" }}
+            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&q=80&w=2560')" }}
             title="Kitchen team in motion"
           ></div>
           <div className="absolute inset-0 bg-black/20"></div>
@@ -76,13 +76,13 @@ export default function Story() {
           <div className="md:col-start-7 md:col-span-6 relative">
             <div 
               className="aspect-[4/5] w-full bg-cover bg-center shadow-sm" 
-              style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCNCNg5-B-B5G6UfNVILaATCPrSKpr9Bt1gjdRqAbOTMaW-wRAo1FZwjryQ8sbhW5_JXT_IZJRzXShnk8j54khZzkjZ_pd3ES77XOdsAgnCQxC1MUFFfhEEgCl0s7IzxUkOuYx6DI8yykNbCxaUJyj1NQ1OgBnptMLmH1bcznMG0Zqdrr7B_zxjGsFcC5N25DoW6bqT-YR8JizTHsSBl_3VTFfYHEGoqjQwcOWODJxcq1M2cuJcUiIKgPLAPmAQAks2YeFs6MJ7h-g8')" }}
+              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=2560')" }}
               title="Mediterranean coastal village"
             ></div>
             <div className="absolute -bottom-8 -left-8 md:-left-16 w-1/2 hidden md:block">
               <div 
                 className="aspect-square bg-cover bg-center border-[8px] border-background" 
-                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBioMZ0ltuMb5otylequBS18CusTFo1fAuHwph4YoNMWT2gLijDF0fajf_OYv9vmprCr_cajTE7P5jIPRgsWXcB-pmIwi2jUfC8QAwvwpmeJ_WyEoV7sw95zJtIpMCC1qrv12QHv1gB8CUTS0PwpetICKIJCaIRGLzTmBRQxlM-V5lOIKwOZnUwve--LIedBeDR1C1xXKy8HNGknnUhTsj-Y9bonc7DsDR9ndAXcbaTOn0xEu5OSDMb7xEvquZTwYEb1hlp-Vcc0by')" }}
+                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1414235077428-338988a2e8c0?auto=format&fit=crop&q=80&w=2560')" }}
                 title="Heritage tomato"
               ></div>
             </div>
@@ -104,7 +104,7 @@ export default function Story() {
             <div className="flex flex-col space-y-4">
               <div 
                 className="h-64 bg-cover bg-center" 
-                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxue7es6XQIjSHbXfgv3akAnx6CnPyGGyEZRSIihQ73I0dUpPvCT-iGe0ZRo9ohybw9CLZxlISXMcPr1a33HZoYcOn3e0ntqE1CmVI9ImZu6HgKzn-B3kraQOCVN8Kh_Uq6Wm-nlRPTgu2aQ2JliZhe97Xt-7xJV3GrqXNRD8yS3zK8tN21P6VoR1LklIKmM6-YTsdasWOVaueuhIYqkN_aXRuStWbd47UGdPIoVp1X3pTytooazrXNRr9jcvtfiVcEL2BmaROeGTB')" }}
+                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=2560')" }}
                 title="Root vegetables"
               ></div>
               <h3 className="font-headline-sm text-headline-sm">The Soil</h3>
@@ -113,7 +113,7 @@ export default function Story() {
             <div className="flex flex-col space-y-4 md:translate-y-12">
               <div 
                 className="h-64 bg-cover bg-center" 
-                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCkD6SmnLrRAB_tLpIitWf4vaHZIV9Xq_OpUzY8ziLR1yy3RjVvWg0o9TRYCrfVoQVj_wnZ99H1qVPNLuSKSFyYOkF2xcGp-tu_snbb1qp1Kfp7aCVtUVMQ3MLUU-q_FrbI3bFximVDM0AxeIsVYaOth1nzGh71VoqvgNOA4uEn_QjgW0gglxw5WHcfMl4Uo5gX_DigYkVOXYwEarln8KCQdUAywOs6XcPLd6SQxoF-h9Z-jOftJ0yQ-FHdSKirDrQAq-JofCSMf2Fo')" }}
+                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=2560')" }}
                 title="Fresh honeycomb"
               ></div>
               <h3 className="font-headline-sm text-headline-sm">The Hive</h3>
@@ -122,7 +122,7 @@ export default function Story() {
             <div className="flex flex-col space-y-4">
               <div 
                 className="h-64 bg-cover bg-center" 
-                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBozWiANOpHS5ACsU9UHePLnAN4rkh_JYl3xFjAEuvRfQ24n3PJhEXQRZ0Sy0ounT3tP6YePHwidykMWQKDtVF4UtD2FCZNwx-PmG3gWDL56XAOTNIcGKHqkhHE_4zSvFmxVeYCRAQYoBg_wrh5KKSQ04zaPTnzYZbU9ZiT6kQMpgvQOJZuOZAsalUgE4PdwQ7o-ynngEmav7NsfTXyBIo5_l3esJsEXES8y3-XcmHq5CAvYSKnbG9tYzQ0vMAoHs8m9Wk1nZKRcYOR')" }}
+                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80&w=2560')" }}
                 title="Fresh sea bass"
               ></div>
               <h3 className="font-headline-sm text-headline-sm">The Sea</h3>
@@ -139,7 +139,7 @@ export default function Story() {
             <div className="order-2 md:order-1">
               <div 
                 className="aspect-square bg-cover bg-center" 
-                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAINj_tYKqvCj4xKJKfg-pVws3uaGLoJJpBElIUToZ-15LNiLWFxg2-x3urDoYaoVueJeJwwwNN-7yKz7exnulc4soJ6pZip5gy3pQ-C6l1Xng5U5PzdmshkOR5d4iRUILt0T0FkO6xfZFoQxbKXol9Us6v3Q5j7nUpNK2Pnn6WTj6S29Enbg4aMUJg_jNJbuoJUsoExuSEWeDgDoe7TGN04Tr5U-ZD6KSckRZzrNP3aAnU_cLAEQ9Hqdp4TUYnjBc2a3ivNcrkg3i5')" }}
+                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=2560')" }}
                 title="Luxury restaurant dining room"
               ></div>
             </div>
@@ -183,7 +183,7 @@ export default function Story() {
               <div className="overflow-hidden mb-8">
                 <div 
                   className="aspect-[3/4] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
-                  style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8lmJRgefqlio8R2FwW8Jfcc-Vt2RJYsfek_u2adRqX1lZS_uX8OBOh8iVuBxyFr4LGaYgBxqYex-AoJzB-abjxJEcnuaoZXaIhwLbkZhH4b8EaIP4qi8ZWocmMO2xH42dfX4pBijEY30NR2fSTZALl2UFu49lohXShjxoFyja9x1Km01F1XyScv1h_3v5R-FHr4QyP9SvOdTJI6bweoOOHDIAtZ7Vkhnx-Ic2xCgay1y3pVf4H4LEbq8P-7RG2U8o5Vcm8pOdmbix')" }}
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=2560')" }}
                   title="Head sommelier"
                 ></div>
               </div>
@@ -198,7 +198,7 @@ export default function Story() {
               <div className="overflow-hidden mb-8">
                 <div 
                   className="aspect-[3/4] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
-                  style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCshNLVR0GerJEIaxVY0ALX4uiP7zlGoyYxzeHu9hT4l1zs44J7pdcHp_xPqy0ms2AfnydvPRZXCiqz2fG35bsw_pGZa2kTJaprVYJJKWJx8a0QS4zM6aJoP3gjRNoNSYuMQT8hMuZestnbYOFc8E0qd7Zw2HSEZobqXwHHu5ZsbIBC4rYqRN5QQgUOyGTh07BBTL_Bv5flKyd6Bc_O2Wn3HGQnJ5bea0ynyuqmQsKALV2snr1eekuIhUI4R9wiVPL9gjQlqYFM4Uy-')" }}
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&q=80&w=2560')" }}
                   title="Master Patissier"
                 ></div>
               </div>

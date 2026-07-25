@@ -1,6 +1,32 @@
 @import "tailwindcss";
 
 :root {
+  /* Spacing Variables */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 32px;
+  --space-lg: 64px;
+  --space-xl: 96px;
+  --space-2xl: 128px;
+  --space-3xl: 160px;
+  
+  --spacing-unit: 8px;
+  --spacing-margin-desktop: 80px; /* Refined for professional desktop layout */
+  --spacing-gutter: 32px;
+  --spacing-margin-mobile: 24px; /* Refined for mobile */
+  --spacing-container-max: 1440px; /* Increased to 1440px for global layout consistency */
+
+  /* Fonts */
+  --font-display-lg: "Bodoni Moda", serif;
+  --font-label-caps: "DM Sans", sans-serif;
+  --font-headline-md: "Bodoni Moda", serif;
+  --font-body-md: "DM Sans", sans-serif;
+  --font-body-lg: "DM Sans", sans-serif;
+  --font-display-lg-mobile: "Bodoni Moda", serif;
+  --font-headline-sm: "Bodoni Moda", serif;
+}
+
+@theme {
   /* Colors */
   --color-on-tertiary-fixed: #261900;
   --color-outline: #747878;
@@ -50,32 +76,6 @@
   --color-secondary-fixed-dim: #c9c6c0;
   --color-secondary-container: #e5e2db;
 
-  /* Spacing Variables */
-  --space-xs: 8px;
-  --space-sm: 16px;
-  --space-md: 32px;
-  --space-lg: 64px;
-  --space-xl: 96px;
-  --space-2xl: 128px;
-  --space-3xl: 160px;
-  
-  --spacing-unit: 8px;
-  --spacing-margin-desktop: 80px; /* Refined for professional desktop layout */
-  --spacing-gutter: 32px;
-  --spacing-margin-mobile: 24px; /* Refined for mobile */
-  --spacing-container-max: 1440px; /* Increased to 1440px for global layout consistency */
-
-  /* Fonts */
-  --font-display-lg: "Bodoni Moda", serif;
-  --font-label-caps: "DM Sans", sans-serif;
-  --font-headline-md: "Bodoni Moda", serif;
-  --font-body-md: "DM Sans", sans-serif;
-  --font-body-lg: "DM Sans", sans-serif;
-  --font-display-lg-mobile: "Bodoni Moda", serif;
-  --font-headline-sm: "Bodoni Moda", serif;
-}
-
-@theme {
   --text-display-lg: 64px;
   --text-display-lg--line-height: 1.1;
   --text-display-lg--letter-spacing: -0.02em;

@@ -10,37 +10,37 @@ const galleryItems = [
     id: 1,
     category: "food",
     title: "Culinary Art",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAcS2CREFsRvhhcTB2H1nIEu1gMiorfaOrqO9m-cDO06VFIAUq7Ro5D2zwM3B_ILjQ_3yW_k05x5DU0pqNL7BPlEZ7TGzpP13SO-eVPvkfVEjlfibpfdV6YP3ABYVD5f6AGb07eOUpsGNml3FnHZmHv5YkZ2JxgP2L4TOhmRjf-8y17_NVa8qHUkYZzvF4-ylQOyHynb_KIo3JqZlePA5lcLVpvjdlDOqlrDOkbGvAdVp9F_1XB30GEX-ARFKTlHlscBE2mMrDnDMIb"
+    src: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=2560"
   },
   {
     id: 2,
     category: "ambiance",
     title: "The Terrace",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCsKAqRMK1q41ta4Usn4ANKlqcQbMzHCe96aIXgpGQN8XlT9oZIbyKy5s2VlOredH2UdswwuEZuRh7jhoKz26VrTSJFJnTRJyBqI63YRp_XKUSDxv6b9kICJNydw0DK6FiGkDNFY_3QDnvXZZR8ayR7WpmXit89wVYNy1W1gUWTg9jB_6SCM0FpHSLueLBkD43jFXrCPSoj0GbP61vSKW9ppv-N_Q-CDr-yBoP-YwMXxeTFlppO8t2rG7_d6g7-TDD3ekuG3TALU92y"
+    src: "https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&q=80&w=2560"
   },
   {
     id: 3,
     category: "process",
     title: "The Garnish",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCEYEsbxjsNISH_xlx1oDjjTHzgM_kW9UUWjQuJUBBdMp3z6wtbXGnxGnjSCgg41kx-uHRRWJ9K8pCm5bkoy4oWFyO_awNw43tSnfh8AquwTT7CmV3vt1mOVce5SgIaT_bV6reP0r6tdAmJCOvrEVpIjdLf5eVyCLE8mh50-ILsWUQBcO_O3uzCY5lJG-UOEsYpcPzkn4YUfog91HpawuAhtBFvcoy7wGdSpP4TeBURIMVDIBhlOvISKTI2AnK8n6_EPSJD5mwuTwb0"
+    src: "https://images.unsplash.com/photo-1592861119250-46aba0150bf5?auto=format&fit=crop&q=80&w=2560"
   },
   {
     id: 4,
     category: "food",
     title: "Pure Elements",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCFoVzwPEElueRalf82AlOHez6dSTt6wCd00Hyb2fqGtV5VaQYv7U4ZZIk-0BcHfQK5FDKSIwTqFUQw015ku4sUIdHICypqfBvtxSEoeMSiVf2zHu6l_CGs6HrCDpeUltciwt8w2TmQ4z-HOsSk7_rdYuQV_U8NVLWQrCcXB7b1bSRmmxQkJ5LpFA11LFhDOPGBUYWJIWCE8-y46UHQYrWmsrIloBkA_WnT-5e8aF61T0EcG7ZfFt8cdPJQ7YNUZAoarE3VXVZwHRkt"
+    src: "https://images.unsplash.com/photo-1600891964092-4b16e4587d50?auto=format&fit=crop&q=80&w=2560"
   },
   {
     id: 5,
     category: "ambiance",
     title: "Private Dining",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBe27ZbArOWIOW7g14Wt_UEGhntzlfGe1dWyoF_6B3KaedLsu1LPFRm42IvVsm-HKx7a8QYtpX3wrYtY_vsBM9PhZLOjGI2SNVL4FyJrWDqPMoHHr23vglGkTC9CKQvrm2ZcO_YC83BXY0ahDnBQtIKOREl1zfjfIC3YIRD8XW5wR6cf5hQFPuVxBx576mURwXRulxiPBki0EDTBdkfVXPcitEZHOnW-VSMrmxNTfhFMcMY9E1U6jj6p9k2oCoepVlHWWrjTOFwoNeC"
+    src: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&q=80&w=2560"
   },
   {
     id: 6,
     category: "process",
     title: "The Pour",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBuskV-xl26SUFycPeOcuDEimpwymLK65RaKfReBFocVXJp7wYbfX6ilsHxEix1sqj9_1TagZWjQC2dOqNFnfuelKdvcgtabQgiFliRVXZzjJOsg8Aj4F3sbmb5oPSucI2H8OKRDzT1U3MHKbth63oS3Wld-PQgRm8_c2fbj669ejvxYJoXvml35lMXnONUyklOLwxtZYKslRl6G9nY9w_UHUKJk1fOaZ-XS4YBhffvcBTuGnyarmYg5wWewxXvYQyOCDRUbXWm5CPd"
+    src: "https://images.unsplash.com/photo-1565557613262-b8eb92040332?auto=format&fit=crop&q=80&w=2560"
   }
 ];
 

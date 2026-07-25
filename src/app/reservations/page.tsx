@@ -214,7 +214,7 @@ export default function Reservations() {
         <section className="hidden lg:block w-1/2 relative min-h-full overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-[10000ms] hover:scale-110" 
-            style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuB84WCjiVHlIek2h7T910zOVhQeJ2PqK2-iqnN0Q45T9s1LplT-DelEqMOzv5lUpPXG3IXs1QjOEoyxkJz4dbs6kDUm50KDEU4MtDfbTdWrFnyMzdLqNUWjDY35che8iVV3fLxzpwhPKXIlTp4qPp12CwBmlbQxv8nVp0x9pmHo5e23QFWVnjWtwvWF9CaF3hbGBM8dZJNFthTHiH7a0ulKkCVr54Xn-bdUI4xBkzhu2jsr7Ibf1SwjrzkeCY5f_ocZoYSFgOfGSG3B')" }}
+            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1565557613262-b8eb92040332?auto=format&fit=crop&q=80&w=2560')" }}
             title="Private corner table"
           ></div>
           <div className="absolute inset-0 overlay-dark pointer-events-none"></div>

@@ -53,7 +53,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <div 
             className="w-full h-full bg-cover bg-center scale-105" 
-            style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjn_G7Zn4T0aMhcn_1NkqpQ7K_UCt-0rmckpCy2ElESnPGf2PYbOI2iwFs07pV8v5bZYCYmPLmRxA1l6fJdZkyvt0oGGWvd4yKpRGaqcNONXBVRZU8J8-O6Jd0lGb4mF8t9K0B1nSGmVSj1V595Vd1WL6hPU7qRF2dkAAwK0YCGMB_J41WGJP3MeuNjqtbe1Mm6Yu63_sGnPFbg8pjo62BCOqjyE3NRUXW_bBr1QkLaf1pAERmuwstcU2mdXSDS12dsGEBhq9Z3wz2')" }}
+            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=2560')" }}
             title="A cinematic, wide-angle photograph of a luxury Mediterranean restaurant interior at dusk."
           ></div>
           <div className="absolute inset-0 bg-black/20"></div>
@@ -100,12 +100,12 @@ export default function Home() {
           <div className="relative reveal" style={{ transitionDelay: "200ms" }}>
             <div 
               className="aspect-[4/5] bg-cover bg-center shadow-lg" 
-              style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXfitpZlfjqX06JtgUP-xKxc2pmWS9SCUckJxSFplnQucqbKvpPDLsc2TNdYfcvw6v_ngOqY73WswIL4PaMH5jzEIjIhil6kO3byuMYGiksAgRzzDbRu7JLhROWtbvT5dpYI-EXrJQ8SXb9GeESoEKiIQLHVdA3BGtlkqjR47M7VRhT6drBniYUcP55_2n3kr5PPLIjLFJw_AvxsD4xMcUNyQ6FNK7Q2VsEBDkGBDm_oSpq031KS58tJMU2arvVNL_bXbbS1iE3XOZ')" }}
+              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80&w=2560')" }}
               title="A minimalist close-up shot of hand-selected seasonal ingredients on a rustic stone countertop."
             ></div>
             <div 
               className="absolute -bottom-8 -left-8 hidden md:block w-64 aspect-square bg-cover bg-center border-8 border-background" 
-              style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuD3K9dg_gQvtXtugFDq3u4iomYEAKglmLBIZRrvoF3dPlklBBEKUS4FNS-MMFbxKm_Zo3VyneldMDXBBaZahd9Ai-FTdwCfDnj3i8kEbCuwgJQaKuCtGr2QOQP6RNNS-vwiFNA5E6xBmeqHaz6rVQac733Je178GimZowTcR63xeG_Mi1WnKYXq8rFY_ZnzTDQCyA_3-tXd27eFd1wFXEHD2W6Bnk9VPt6XU7kht9XjCuYBhjBq8jw-bd2ejtPlBndjPHDUIhqxWSyG')" }}
+              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=2560')" }}
               title="A macro photograph of fresh Mediterranean herbs being prepared."
             ></div>
           </div>
@@ -126,7 +126,7 @@ export default function Home() {
                 <img 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                   alt="Seared Scallops" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBabxpQi747YnNdyhc6oWICdg4jl3KAunoQntinl-DA9e_3OxNy_aB5nfWvKUyRn-kOu9qWa0AE6MmBOyC4ai8Zx0DzPVYJBg9i3DP4jlKAtQwmugLp6NejyHFcJuFE5NeCjdpIt4ww42Uuh_liCCHwNzFtU80rbQng4zu2DqGAKGniECzyiVkKGm3oxhvDP0E8urVRF-RBQgBx7XoXdzdfMY3AM5gbHQP8J6YzV0OsK6mdp_wqy7AT5oEmnpWvCc-7_whqwRoge01P" 
+                  src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=2560" 
                 />
               </div>
               <div className="flex items-baseline">
@@ -143,7 +143,7 @@ export default function Home() {
                 <img 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                   alt="Iberico Pork Pressé" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOY6XowK713zMraW6AGSmO7iH3R8KG0lPesKBB4Q4OOu2hq_KSHDICH32i-K1yfGXzKe0yntf8pj0SHFJ0w83R_xsRP-c2DssnIkBFnkNUE9G4lQpX7H05xfaieKw9SCXMh_txAP0bwEYlt4GeoX2bJ1hrWl8TDlWHG0zP8iyynSm2f3cAvhvawG802uW_M_hTa_PKNuv5PIhHJu-WEy_3I0Pr1zAgJUY_N9TW0B3dXIJSIiyxkOtLquMljViMYcZ-rcaNxmmBOXO2" 
+                  src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&q=80&w=2560" 
                 />
               </div>
               <div className="flex items-baseline">
@@ -160,7 +160,7 @@ export default function Home() {
                 <img 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                   alt="Wild Mushroom Risotto" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeurlQWnkUNJI0QjazK9Lsk44ir-9XRDk9qdOtA4ggIk6A9PD60ziHP5jLQTXxL-G-KjLy8mpjJZRRt7a57tFGgxdldQuE3fxwHkLvgNfjGcrvgrL_ZFH8pF72afJTJn2e-_0UFONIAJDfSTLwqDIlzUfsJqL15ZaFINMeSEiSQpFEAp5SLC7Ra20rc0DqHiENFzmTiR8G8HfzPvOS1PBtKDTb9QKZWSFP6nWQPzYQGJlACcWY3B7T1EJbJoX9lzyRXw-H8UpIRvrl" 
+                  src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=2560" 
                 />
               </div>
               <div className="flex items-baseline">
@@ -197,7 +197,7 @@ export default function Home() {
                 <img 
                   className="w-full shadow-2xl" 
                   alt="Chef Marcelle Vance" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzecBTLGHUNt8495ec5vGF4uHhEWoHW2Zv13VGP1xoyFArcLdU71Prebv20Buf6_uD34HCZfKK5LA9m2c1dmsL1-3hVaxTGRVvKBAbaokZ9INWul3x2GzKXv-ABprb80-uxX0vr5EfalAEp9ROjMfS9_gvtUgUDbEw5N0zR4-YiV48rQ43tXA0fjBT5iEnNTPQh8tS2tAvjXCYDA-FF5i9k31YZAy-7alRLILLXISEmqayxLlEooy1SR8LAverlwBHUE9rT8XwZ2DJ" 
+                  src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&q=80&w=2560" 
                 />
                 <div className="absolute inset-0 border border-primary/10 translate-x-4 translate-y-4 -z-10"></div>
               </div>
@@ -218,7 +218,7 @@ export default function Home() {
               <img 
                 className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000 group-hover:opacity-100" 
                 alt="The Coastal Terrace" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuChxjpKYo2qDJtIIwFs3Anqyo_Uh4hPs8Uia7mMNM2I7piHsLPPSqadk_3YevAEbx-WOvY4WEUi2d1hunE-MYIgCj348k8tG1wbeNj9-5XD2G-MikNGJ6LTdl7Icq6EBWlkz748LKEieMiT97rsCOQyds19VTZJZQo4JhSJbfxKR0kqYjMEuxsQjmD4hyN3RHT_sZb8QmBq_OK2mK54_XcKgp2Wk0PdsohrGob3594PotyI7dIBXtNuX3ZwRsr8JKYPXf2CY8NO4kMR" 
+                src="https://images.unsplash.com/photo-1592861119250-46aba0150bf5?auto=format&fit=crop&q=80&w=2560" 
               />
               <div className="absolute inset-0 overlay-dark pointer-events-none"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full z-10">
@@ -230,7 +230,7 @@ export default function Home() {
               <img 
                 className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000 group-hover:opacity-100" 
                 alt="The Private Lounge" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqndIFzVpY1VjSIRAM1dZtyyoXiU0etl0FJR9hm2y9j7scYcwZ3KZdk4lamUFP5de4_Ttk_FCKG0GfkUCNXRbszE2T3unysS1ibFquPjtTXer_UgKOM-7i583TK9FwhcJn36yXtqx_PT6Iu-I5_V8xVvjWqm2kKJjpz070yc9aD2cparDeWLV7pTVwvk18D-EC69Bh2kzaRNOpUUmDx_B89tWndBm3AIn3Sb1tTjP19VFjW69GNT0DGerRI5JzFgP-y0yE-11lbqcb" 
+                src="https://images.unsplash.com/photo-1600891964092-4b16e4587d50?auto=format&fit=crop&q=80&w=2560" 
               />
               <div className="absolute inset-0 overlay-dark pointer-events-none"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full z-10">
@@ -277,7 +277,7 @@ export default function Home() {
             <img 
               className="w-full h-full object-cover" 
               alt="Monaco Location Map" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD_GIAi-sEow_kb_qljSNVrUjFmlmpaP0TXC-lJutjzIxKSJRWBlo_fuvblKGE83nlG48VkHi-Scy0DugHLKVbTps9YGR_WF9MNTfLhYdtE8bsyf3yKtTLnLuE0_KzfjAkD0NI0SQyRws2z2EHBPlon93dYmREiqD7k1h-QuUFYCcHQa-CqibER1vAb9N828HN0SliEZUqnKSZE3qZ9mM3-1XA3LwoNgolCAZTqZs-gKsnYd3Pm_DBTcv4OvSlJPCu_NUIpu-7FAqM" 
+              src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&q=80&w=2560" 
             />
           </div>
           <div className="md:col-span-4 bg-surface-container p-12 flex flex-col justify-between">

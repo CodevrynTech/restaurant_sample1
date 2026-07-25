@@ -85,7 +85,7 @@ export default function Menu() {
               <img 
                 className="w-full h-full object-cover" 
                 alt="Burrata with Heirloom Tomatoes" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTs_nr1gWhwb7PPq0-M-TdHY65wDO9nRJOj1up_qQkUdywlBv3eZhqlp50izvGKy4CQl4bwl5k-rSUC1jXA-v3EVSzE89mUdvLq9fBxVtjILb16UWuq9SKwIWgwnt6fp84mZP3_X6iRFd9cgDHNNTuT0LHBOPet1g8Zvo_6a3fapp2MGhi0PfditGD9Dr5KgkX6qqolQMwvKEpWGeE1Ek7s51AG3sKkwedNVY6wUv1kPjgeLhyfINg5N0SZ6B5xN_TKOOLiT1yERin" 
+                src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&q=80&w=2560" 
               />
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function Menu() {
             <div className="w-full aspect-[4/5] overflow-hidden grayscale hover:grayscale-0 transition-all duration-[2000ms]">
               <div 
                 className="w-full h-full bg-cover bg-center transition-transform duration-[10000ms] hover:scale-110" 
-                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGrUhdDKOQny1kFbIt1qYxfkmW2PvjXgcwWr7lexo50C6zOQUUtFt9BtBIlKohtwa0gSO7Fz2SBUZw31trBjksAgpm4cKwp8QQujppho2YMhWfBRcY1IeFNWWcPtevTru1mDywSV7lWAgALeLzC_SkPZFO63JXf3vKuCzJMd0cuzdg8fHivUWrk4N2kUez3WiprUGJMHOaVY_E-tD4qMRglEBAkJXMUPojsZOlb3KZlJczGfwG99iR7xMCr6kvV_5qBhKGJT6UgB0t')" }}
+                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=2560')" }}
                 title="Aged ribeye steak"
               ></div>
             </div>
@@ -153,7 +153,7 @@ export default function Menu() {
               <img 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-[2000ms]" 
                 alt="Dark Chocolate Fondant" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEOBsUirC3xan1t2jdCPbtk-XL1dnBLVjwCydKDXsNdU_t1ANcdPC-_ScDTx6ZnxeKNzRwyZi1mA_ayP2MvIbpaNdeQss2AnHGOfMKiJLqG20DeVCRQzm8mvmfrDCOeU8eM9bEWy686Ald-pDEBsj21wYroOnAbrHJJhosbC55KTiIUAkukRBPFEmUnBY646jkwoeT7yL2tk9ZJrut-3CXTqtqofSnj8GkQvyAp4rrlU0vYB_OHpty_6_5938wv7XWLc08IWBS65UB" 
+                src="https://images.unsplash.com/photo-1414235077428-338988a2e8c0?auto=format&fit=crop&q=80&w=2560" 
               />
             </div>
             <div className="flex justify-between items-baseline mb-4 w-full max-w-sm mx-auto border-b border-outline-variant/30 pb-4">
@@ -167,7 +167,7 @@ export default function Menu() {
               <img 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-[2000ms]" 
                 alt="Lemon Verbena Sorbet" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiKWm5VJdgipjVohhNozJHGaWLS9Z7JM7ZVszHovW5XosJ2JdiNmbSJFSieCWIHVylcro76cNVUmIgb4vJmaPoQ2PYGg4qyd1sqYvwda-HUOKLAtYa_YIXqJhnBPwAqGNap08NPguzFoE21BN7Hd4GfEYywQeIQQlAHgWXCqQl_jYRmTwZo43X2Sq9zBR2J3jUPU_m7XUcpAJgPQtsoF0LWJfyFqYhEZAdIohdsnamQ8HhnwptwMW0KQ0E7f1oldwHhnq3RKMdLtS5" 
+                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=2560" 
               />
             </div>
             <div className="flex justify-between items-baseline mb-4 w-full max-w-sm mx-auto border-b border-outline-variant/30 pb-4">

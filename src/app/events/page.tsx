@@ -65,7 +65,7 @@ export default function Events() {
         <div className="absolute inset-0 z-0">
           <div 
             className="w-full h-full bg-cover bg-center" 
-            style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGU_ogx9oI3wFiznRZsUfJF1QysJtG3gEhCurfp8mq3FZGbh_JJaWOvITlH6x486a7ywsPvBs6eFAyUly6Ut2ergWs1NcYTPwZbIhdokX08ykHqVGxaeI0k_3YdxR7U12NLQgaXEWNwCcD0ufOJ6BIxFH2Ac3a5kBSsMPhpFLjBJfcWqVHGkrttA--vdWrnoZLkoZp-PWjU6n1HIzfnb7QGBCOQD0BfUPDA6nyCltaUbAfxCjIg2VhIZHdJd_67upRAF3eh4EzRk7Q')" }}
+            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=2560')" }}
             title="Dining table set for an evening celebration"
           ></div>
           <div className="absolute inset-0 bg-black/20"></div>
@@ -120,7 +120,7 @@ export default function Events() {
             <img 
               className="w-full h-full object-cover" 
               alt="The Library" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeTIdNl85vWn-Tcp-KOh0YT-OUEvNcbUACVbE2BJUWwKOR_y6Wmf-9YhM0FlWRFOMGL_A9xPZAt3HEUb3AWZEzjGTm9fqL2Zm6673dTn_KqBMb8OfHmuTNgsivStBByB4CIoIpym-ND1bBKp55EkBJbCnhJc9c-DpAy6KGQWCRdBPokmdGDMWUdDIp3OXPqp6imWcAe65skud2qY9ZrvpknK8zNgMATxtQq9mc3gghfR5Um2Lq7utbaF0mKvSmIUzCHG0hqUJHoaxs" 
+              src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=2560" 
             />
           </div>
         </div>
@@ -130,7 +130,7 @@ export default function Events() {
             <img 
               className="w-full h-full object-cover" 
               alt="The Garden Room" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpti5Jadn9oAllJR3y_5mu-5NNs9XjZGGylg-FEBACNtFOObHWUl8Tz6-wwIH2kvmahNl9gWzbRpSfHP2B-vtGaqAdWpi7-RruGXkfTkaLqGH8q97ZqdGuLCifIxfrd_JQhkypHao6Ct-PWFjMKcY58Cxpwq926Z7BC3BVvXEbsdRxeqC1GMivnfZg_EXonoTdSTRbLn2R6RAgyAnAPhDpm9YTVCV1ZKt0WmhEshDoiPoSrX1TIwkSbIj6TAEuiMfIhRbCwgEE0IhQ" 
+              src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80&w=2560" 
             />
           </div>
           <div>
@@ -192,7 +192,7 @@ export default function Events() {
               <img 
                 className="w-full h-full object-cover" 
                 alt="Culinary Artistry" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcapoOsdjxaqV976_sP-EAeGBz4rFlRY49WwdEV-E8gkQwpeZ9e9he4iRAYOb_XcT4xqkFkpxe5OioHJSJlfvsbUrDpxMDgx80Ktw_tidhkkUWp7stV3oKrGS0juHhrK5VjfTQafTEN5FW_nZ1zM-uUcJyvKL9OeZ9cLYJhXM60zyo7ITQWX1YpTO19NglVgejrlf-w1Ol-tbwwtsy3oEXoLl4EfSIQrmTaa72xPcqoQGHBnFTiN_doGFadar_mtdvUV3qHMxuk4wI" 
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=2560" 
               />
             </div>
             <h4 className="text-headline-sm font-headline-sm">Culinary Artistry</h4>
@@ -203,7 +203,7 @@ export default function Events() {
               <img 
                 className="w-full h-full object-cover" 
                 alt="Floral Design" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKg0ofdn1z7UsM5vMOWkdPJeu9Y0DD3ipRif98742O7dcN4kFnTxKK6sPpKg8vk7v76c0ZJ56ngaggdXtk6Jl8Rd93ZwXYkSW59BlF-4fED2DSYomvq-2zB2Qartx42ntN5OnC3oTpHApIM7t-ekBCnM7xINzi8JwpdILLFZBYLJCi3yCr05r4iYfZWMDZLiUo7qrdBEYmmnTvu0bgYDtfH3GExAxi1krFQDNXkrGs87sP7C53X9Yo-Lc8xnB0v4UTqKtLXcTSCZKd" 
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=2560" 
               />
             </div>
             <h4 className="text-headline-sm font-headline-sm">Floral Design</h4>
@@ -214,7 +214,7 @@ export default function Events() {
               <img 
                 className="w-full h-full object-cover" 
                 alt="Event Concierge" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuASehaZaS8ZV9-3tcI41lPrMC3H_qXHlg7NBSrVCp_mr46AzD0tdJwrTzJ6ono1tZRh0A9v27K8yMEBxyDncfzbnExdt1kglcFwgs3XZVwj6NrT7LirQJBdFRb37V8x_BtnxvbFYXcSkw1OpvUgjnCGTyH-lUovySOVKN8-rcIkN0ivBE4ApQmOx_IA7xgzv6xz-w5jALFpCi90Wf0Vi1LqX2O3Ktb7FsK5fSO9jU-nWedRAuN8i3Th-T8AGwGef4eZAth9DefKAKna" 
+                src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&q=80&w=2560" 
               />
             </div>
             <h4 className="text-headline-sm font-headline-sm">Event Concierge</h4>
