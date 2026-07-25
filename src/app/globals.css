@@ -50,12 +50,20 @@
   --color-secondary-fixed-dim: #c9c6c0;
   --color-secondary-container: #e5e2db;
 
-  /* Spacing */
+  /* Spacing Variables */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 32px;
+  --space-lg: 64px;
+  --space-xl: 96px;
+  --space-2xl: 128px;
+  --space-3xl: 160px;
+  
   --spacing-unit: 8px;
-  --spacing-margin-desktop: 64px;
+  --spacing-margin-desktop: 80px; /* Refined for professional desktop layout */
   --spacing-gutter: 32px;
-  --spacing-margin-mobile: 20px;
-  --spacing-container-max: 1200px;
+  --spacing-margin-mobile: 24px; /* Refined for mobile */
+  --spacing-container-max: 1440px; /* Increased to 1440px for global layout consistency */
 
   /* Fonts */
   --font-display-lg: "Bodoni Moda", serif;
@@ -161,11 +169,33 @@ body {
 }
 
 .fade-in {
-  animation: fadeIn 1.2s ease-out forwards;
+  animation: fadeIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Global Container System */
+.container-custom {
+  width: 100%;
+  max-width: var(--spacing-container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-margin-mobile);
+  padding-right: var(--spacing-margin-mobile);
+}
+@media (min-width: 768px) {
+  .container-custom {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+@media (min-width: 1024px) {
+  .container-custom {
+    padding-left: var(--spacing-margin-desktop);
+    padding-right: var(--spacing-margin-desktop);
+  }
 }
 
 .hover-lift {

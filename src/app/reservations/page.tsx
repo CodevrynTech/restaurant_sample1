@@ -8,11 +8,30 @@ export default function Reservations() {
   const [formState, setFormState] = useState<"idle" | "sent">("idle");
   const [focusedInputs, setFocusedInputs] = useState<Record<string, boolean>>({});
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setFormState("sent");
-    // In a real app, scroll to top of container
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'reservation', ...data }),
+      });
+
+      if (response.ok) {
+        setFormState("sent");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        alert("Failed to submit reservation. Please try again.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("Failed to submit reservation. Please try again.");
+    }
   };
 
   const resetForm = () => {
@@ -48,6 +67,7 @@ export default function Reservations() {
                     <div className="flex flex-col space-y-2">
                       <label className={`text-label-caps font-label-caps uppercase transition-colors ${focusedInputs['date'] ? 'text-primary' : 'text-on-surface-variant'}`}>Date</label>
                       <input 
+                        name="date"
                         className="underline-input text-body-md font-body-md py-2" 
                         required 
                         type="date"
@@ -58,6 +78,7 @@ export default function Reservations() {
                     <div className="flex flex-col space-y-2">
                       <label className={`text-label-caps font-label-caps uppercase transition-colors ${focusedInputs['time'] ? 'text-primary' : 'text-on-surface-variant'}`}>Time</label>
                       <select 
+                        name="time"
                         className="underline-input text-body-md font-body-md py-2 appearance-none" 
                         required
                         defaultValue=""
@@ -77,6 +98,7 @@ export default function Reservations() {
                     <div className="flex flex-col space-y-2">
                       <label className={`text-label-caps font-label-caps uppercase transition-colors ${focusedInputs['size'] ? 'text-primary' : 'text-on-surface-variant'}`}>Party Size</label>
                       <select 
+                        name="size"
                         className="underline-input text-body-md font-body-md py-2 appearance-none" 
                         required
                         defaultValue="2"
@@ -98,6 +120,7 @@ export default function Reservations() {
                     <div className="flex flex-col space-y-2">
                       <label className={`text-label-caps font-label-caps uppercase transition-colors ${focusedInputs['name'] ? 'text-primary' : 'text-on-surface-variant'}`}>Full Name</label>
                       <input 
+                        name="name"
                         className="underline-input text-body-md font-body-md py-2" 
                         placeholder="John Doe" 
                         required 
@@ -109,6 +132,7 @@ export default function Reservations() {
                     <div className="flex flex-col space-y-2">
                       <label className={`text-label-caps font-label-caps uppercase transition-colors ${focusedInputs['email'] ? 'text-primary' : 'text-on-surface-variant'}`}>Email Address</label>
                       <input 
+                        name="email"
                         className="underline-input text-body-md font-body-md py-2" 
                         placeholder="john@example.com" 
                         required 
@@ -120,6 +144,7 @@ export default function Reservations() {
                     <div className="flex flex-col space-y-2 lg:col-span-2">
                       <label className={`text-label-caps font-label-caps uppercase transition-colors ${focusedInputs['phone'] ? 'text-primary' : 'text-on-surface-variant'}`}>Phone Number</label>
                       <input 
+                        name="phone"
                         className="underline-input text-body-md font-body-md py-2" 
                         placeholder="+1 (555) 000-0000" 
                         required 
@@ -134,6 +159,7 @@ export default function Reservations() {
                   <div className="flex flex-col space-y-2">
                     <label className={`text-label-caps font-label-caps uppercase transition-colors ${focusedInputs['requests'] ? 'text-primary' : 'text-on-surface-variant'}`}>Special Requests</label>
                     <textarea 
+                      name="requests"
                       className="underline-input text-body-md font-body-md py-2 resize-none" 
                       placeholder="Allergies, celebrations, or table preferences..." 
                       rows={2}

@@ -53,7 +53,7 @@ export default function Gallery() {
   return (
     <div className="pt-24 md:pt-32 pb-24 md:pb-40">
       {/* Hero Header */}
-      <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-16 md:mb-20 fade-in">
+      <section className="container-custom mb-16 md:mb-20 fade-in">
         <div className="max-w-3xl">
           <p className="text-label-caps font-label-caps text-secondary mb-4 uppercase tracking-[0.2em]">Visual Narrative</p>
           <h1 className="text-display-lg-mobile md:text-display-lg font-display-lg mb-8">A Glimpse into Lumira</h1>
@@ -64,7 +64,7 @@ export default function Gallery() {
       </section>
 
       {/* Filter Navigation */}
-      <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12 md:mb-16 border-b border-outline-variant pb-6">
+      <section className="container-custom mb-12 md:mb-16 border-b border-outline-variant pb-6">
         <div className="flex flex-wrap gap-8 items-center justify-center md:justify-start">
           {(["all", "food", "ambiance", "process"] as Category[]).map(cat => (
             <button
@@ -83,7 +83,7 @@ export default function Gallery() {
       </section>
 
       {/* Masonry Gallery */}
-      <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      <section className="container-custom">
         <div className="masonry-grid">
           {filteredItems.map((item, index) => (
             <div

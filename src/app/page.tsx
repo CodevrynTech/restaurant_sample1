@@ -57,9 +57,9 @@ export default function Home() {
             title="A cinematic, wide-angle photograph of a luxury Mediterranean restaurant interior at dusk."
           ></div>
           <div className="absolute inset-0 bg-black/20"></div>
-          <div className="absolute inset-0 overlay-dark"></div>
+          <div className="absolute inset-0 overlay-dark pointer-events-none"></div>
         </div>
-        <div className="relative z-10 text-center px-margin-mobile md:px-0 max-w-4xl pt-24">
+        <div className="relative z-10 text-center container-custom max-w-4xl pt-24">
           <h1 className="text-on-primary font-display-lg text-display-lg-mobile md:text-display-lg mb-6 reveal">
             The Art of Modern Mediterranean
           </h1>
@@ -81,7 +81,7 @@ export default function Home() {
       </section>
 
       {/* About Teaser */}
-      <section className="section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+      <section className="section-padding container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
           <div className="reveal">
             <span className="text-label-caps text-outline block mb-4">Our Philosophy</span>
@@ -114,7 +114,7 @@ export default function Home() {
 
       {/* Signature Dishes */}
       <section className="bg-surface-container-low section-padding">
-        <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div className="container-custom">
           <div className="text-center mb-20 reveal">
             <span className="text-label-caps text-outline block mb-4">The Collection</span>
             <h2 className="text-headline-md font-headline-md">Signature Creations</h2>
@@ -176,7 +176,7 @@ export default function Home() {
 
       {/* Chef Section */}
       <section className="section-padding bg-white overflow-hidden">
-        <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div className="container-custom">
           <div className="flex flex-col md:flex-row-reverse items-center gap-16 md:gap-32">
             <div className="w-full md:w-1/2 reveal">
               <span className="text-label-caps text-outline block mb-4">Culinary Vision</span>
@@ -208,7 +208,7 @@ export default function Home() {
 
       {/* Dining Experience */}
       <section className="section-padding bg-primary-container text-on-primary">
-        <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div className="container-custom">
           <div className="text-center mb-20 reveal">
             <span className="text-label-caps text-on-primary-container block mb-4">The Atmosphere</span>
             <h2 className="text-headline-md font-headline-md text-white">Curated Spaces</h2>
@@ -244,7 +244,7 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className="section-padding bg-white text-center">
-        <div className="px-margin-mobile md:px-margin-desktop max-w-2xl mx-auto reveal">
+        <div className="container-custom max-w-3xl mx-auto reveal-section">
           <span className="material-symbols-outlined text-outline text-4xl mb-8" style={{ fontVariationSettings: "'FILL' 1" }}>format_quote</span>
           <div className="relative overflow-hidden h-48" id="testimonial-slider">
             {testimonials.map((testimonial, index) => (
@@ -271,7 +271,7 @@ export default function Home() {
       </section>
 
       {/* Location & Hours */}
-      <section className="section-padding-bottom px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+      <section className="section-padding-bottom container-custom">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 reveal">
           <div className="md:col-span-8 h-[400px] bg-surface relative">
             <img 

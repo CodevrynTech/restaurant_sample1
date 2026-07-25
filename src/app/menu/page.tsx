@@ -48,42 +48,40 @@ export default function Menu() {
   return (
     <div className="pt-24 md:pt-32">
       {/* Hero Section */}
-      <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-16 md:mb-24">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
-          <div className="max-w-2xl">
-            <span className="text-label-caps font-label-caps text-on-surface-variant mb-4 block">SEASONAL CURATION</span>
-            <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-6">The Menu</h1>
-            <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-              A sensory journey through the Mediterranean coast, where ancestral techniques meet modern refinement. Our autumn selection prioritizes harvest-fresh ingredients and the delicate interplay of sea and soil.
-            </p>
-          </div>
+      <section className="container-custom mb-16 md:mb-24 reveal-section">
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
+          <span className="text-label-caps font-label-caps text-on-surface-variant mb-6 block tracking-[0.2em]">SEASONAL CURATION</span>
+          <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 italic">The Menu</h1>
+          <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            A sensory journey through the Mediterranean coast, where ancestral techniques meet modern refinement. Our autumn selection prioritizes harvest-fresh ingredients and the delicate interplay of sea and soil.
+          </p>
         </div>
       </section>
 
-      {/* Quick Navigation */}
-      <nav className="sticky top-[72px] z-40 bg-background/90 backdrop-blur-md border-y border-outline-variant py-4 mb-16 md:mb-20">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-center gap-6 md:gap-16 overflow-x-auto whitespace-nowrap hide-scrollbar">
+      {/* Quick Navigation - Sticky & Editorial */}
+      <nav className="sticky top-[89px] z-40 bg-background/95 backdrop-blur-md border-y border-outline-variant/30 py-6 mb-16 md:mb-24 shadow-sm">
+        <div className="container-custom flex justify-center gap-8 md:gap-16 overflow-x-auto whitespace-nowrap hide-scrollbar">
           {['starters', 'mains', 'desserts', 'wine'].map((section) => (
             <Link
               key={section}
               href={`#${section}`}
-              className={`text-label-caps font-label-caps transition-all ${
-                activeSection === section ? "text-primary font-bold" : "text-on-surface-variant hover:text-primary"
+              className={`text-label-caps font-label-caps uppercase tracking-widest transition-all ${
+                activeSection === section ? "text-primary border-b border-primary pb-1" : "text-on-surface-variant hover:text-primary"
               }`}
             >
-              {section === 'wine' ? 'Wine List' : section.charAt(0).toUpperCase() + section.slice(1)}
+              {section === 'wine' ? 'Wine List' : section}
             </Link>
           ))}
         </div>
       </nav>
 
       {/* Starters Section */}
-      <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-24 md:mb-32 reveal" id="starters">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
-          <div className="md:col-span-4 sticky top-40">
-            <h2 className="font-headline-md text-headline-md mb-4">Starters</h2>
-            <p className="text-on-surface-variant font-body-md mb-8">Delicate bites to awaken the palate, inspired by the sun-drenched gardens of Provence.</p>
-            <div className="hidden md:block w-full h-[400px] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+      <section className="container-custom mb-24 md:mb-32 reveal-section" id="starters">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+          <div className="lg:col-span-5 lg:sticky top-48">
+            <h2 className="font-headline-md text-headline-md mb-6 italic">Starters</h2>
+            <p className="text-on-surface-variant font-body-md leading-relaxed mb-10 max-w-md">Delicate bites to awaken the palate, inspired by the sun-drenched gardens of Provence.</p>
+            <div className="w-full aspect-[4/5] overflow-hidden grayscale hover:grayscale-0 transition-all duration-[2000ms]">
               <img 
                 className="w-full h-full object-cover" 
                 alt="Burrata with Heirloom Tomatoes" 
@@ -91,19 +89,19 @@ export default function Menu() {
               />
             </div>
           </div>
-          <div className="md:col-span-7 md:col-start-6 space-y-12">
+          <div className="lg:col-span-6 lg:col-start-7 space-y-16 mt-8 lg:mt-0">
             {[
-              { name: "Burrata with Heirloom Tomatoes", price: "$18", desc: "Creamy Puglia burrata, balsamic reduction, basil oil, and fleur de sel." },
-              { name: "Beef Carpaccio", price: "$22", desc: "Paper-thin wagyu beef, aged parmesan shavings, wild arugula, and truffle emulsion." },
-              { name: "Crispy Artichokes", price: "$16", desc: "Flash-fried Roman artichokes served with a zesty lemon-garlic aioli." }
+              { name: "Burrata with Heirloom Tomatoes", price: "18", desc: "Creamy Puglia burrata, balsamic reduction, basil oil, and fleur de sel." },
+              { name: "Beef Carpaccio", price: "22", desc: "Paper-thin wagyu beef, aged parmesan shavings, wild arugula, and truffle emulsion." },
+              { name: "Crispy Artichokes", price: "16", desc: "Flash-fried Roman artichokes served with a zesty lemon-garlic aioli." },
+              { name: "Tuna Tartare", price: "24", desc: "Yellowfin tuna, avocado mousse, micro-cilantro, and a light citrus ponzu dressing." }
             ].map((item, i) => (
-              <div className={`group ${i === 2 ? 'border-b border-outline-variant pb-12' : ''}`} key={item.name}>
-                <div className="flex items-end mb-2">
-                  <span className="font-headline-sm text-headline-sm">{item.name}</span>
-                  <div className="dot-leader"></div>
-                  <span className="font-body-md text-on-surface-variant">{item.price}</span>
+              <div className="group border-b border-outline-variant/30 pb-10" key={item.name}>
+                <div className="flex justify-between items-baseline mb-4">
+                  <span className="font-headline-sm text-headline-sm tracking-wide">{item.name}</span>
+                  <span className="font-label-caps text-label-caps tracking-widest text-on-surface-variant ml-4">${item.price}</span>
                 </div>
-                <p className="text-on-surface-variant font-body-md max-w-md italic">{item.desc}</p>
+                <p className="text-on-surface-variant font-body-md leading-relaxed italic max-w-md">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -111,30 +109,30 @@ export default function Menu() {
       </section>
 
       {/* Main Courses Section */}
-      <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-24 md:mb-32 reveal" id="mains">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
-          <div className="md:col-span-7 space-y-12 order-2 md:order-1">
+      <section className="container-custom mb-24 md:mb-32 reveal-section" id="mains">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+          <div className="lg:col-span-6 space-y-16 order-2 lg:order-1 mt-8 lg:mt-0">
             {[
-              { name: "Pan-Seared Sea Bass", price: "$42", desc: "Wild-caught bass, braised fennel, saffron reduction, and herb-crushed potatoes." },
-              { name: "Aged Ribeye with Truffle Butter", price: "$58", desc: "45-day dry-aged beef, black truffle compound butter, and charred asparagus." },
-              { name: "Handmade Saffron Tagliatelle", price: "$34", desc: "Fresh egg pasta, hand-picked saffron filaments, lobster medallions, and chive blossoms." }
+              { name: "Pan-Seared Sea Bass", price: "42", desc: "Wild-caught bass, braised fennel, saffron reduction, and herb-crushed potatoes." },
+              { name: "Aged Ribeye with Truffle Butter", price: "58", desc: "45-day dry-aged beef, black truffle compound butter, and charred asparagus." },
+              { name: "Handmade Saffron Tagliatelle", price: "34", desc: "Fresh egg pasta, hand-picked saffron filaments, lobster medallions, and chive blossoms." },
+              { name: "Roasted Duck Breast", price: "46", desc: "Crispy skin duck, cherry gastrique, parsnip purée, and butter-braised endives." }
             ].map((item, i) => (
-              <div className={`group ${i === 2 ? 'border-b border-outline-variant pb-12' : ''}`} key={item.name}>
-                <div className="flex items-end mb-2">
-                  <span className="font-headline-sm text-headline-sm">{item.name}</span>
-                  <div className="dot-leader"></div>
-                  <span className="font-body-md text-on-surface-variant">{item.price}</span>
+              <div className="group border-b border-outline-variant/30 pb-10" key={item.name}>
+                <div className="flex justify-between items-baseline mb-4">
+                  <span className="font-headline-sm text-headline-sm tracking-wide">{item.name}</span>
+                  <span className="font-label-caps text-label-caps tracking-widest text-on-surface-variant ml-4">${item.price}</span>
                 </div>
-                <p className="text-on-surface-variant font-body-md max-w-md italic">{item.desc}</p>
+                <p className="text-on-surface-variant font-body-md leading-relaxed italic max-w-md">{item.desc}</p>
               </div>
             ))}
           </div>
-          <div className="md:col-span-4 md:col-start-9 order-1 md:order-2 sticky top-40 mb-12 md:mb-0">
-            <h2 className="font-headline-md text-headline-md mb-4">Main Courses</h2>
-            <p className="text-on-surface-variant font-body-md mb-8">The heart of our kitchen. Sustenance reimagined through the lens of coastal elegance.</p>
-            <div className="w-full h-[500px] overflow-hidden">
+          <div className="lg:col-span-5 lg:col-start-8 lg:sticky top-48 order-1 lg:order-2">
+            <h2 className="font-headline-md text-headline-md mb-6 italic">Main Courses</h2>
+            <p className="text-on-surface-variant font-body-md leading-relaxed mb-10 max-w-md">The heart of our kitchen. Sustenance reimagined through the lens of coastal elegance.</p>
+            <div className="w-full aspect-[4/5] overflow-hidden grayscale hover:grayscale-0 transition-all duration-[2000ms]">
               <div 
-                className="w-full h-full bg-cover bg-center transition-transform duration-1000 hover:scale-105" 
+                className="w-full h-full bg-cover bg-center transition-transform duration-[10000ms] hover:scale-110" 
                 style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGrUhdDKOQny1kFbIt1qYxfkmW2PvjXgcwWr7lexo50C6zOQUUtFt9BtBIlKohtwa0gSO7Fz2SBUZw31trBjksAgpm4cKwp8QQujppho2YMhWfBRcY1IeFNWWcPtevTru1mDywSV7lWAgALeLzC_SkPZFO63JXf3vKuCzJMd0cuzdg8fHivUWrk4N2kUez3WiprUGJMHOaVY_E-tD4qMRglEBAkJXMUPojsZOlb3KZlJczGfwG99iR7xMCr6kvV_5qBhKGJT6UgB0t')" }}
                 title="Aged ribeye steak"
               ></div>
@@ -144,56 +142,54 @@ export default function Menu() {
       </section>
 
       {/* Desserts Section */}
-      <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-24 md:mb-32 reveal" id="desserts">
-        <div className="text-center mb-20">
-          <h2 className="font-headline-md text-headline-md mb-4">Desserts</h2>
-          <p className="text-on-surface-variant font-body-md max-w-lg mx-auto">A final, lingering note of sweetness to conclude the Lumira experience.</p>
+      <section className="container-custom mb-24 md:mb-32 reveal-section" id="desserts">
+        <div className="text-center mb-16 max-w-2xl mx-auto">
+          <h2 className="font-headline-md text-headline-md mb-6 italic">Desserts</h2>
+          <p className="text-on-surface-variant font-body-md leading-relaxed">A final, lingering note of sweetness to conclude the Lumira experience.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
           <div className="text-center group">
-            <div className="w-full aspect-[4/3] overflow-hidden mb-8">
+            <div className="w-full aspect-square overflow-hidden mb-8">
               <img 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" 
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-[2000ms]" 
                 alt="Dark Chocolate Fondant" 
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEOBsUirC3xan1t2jdCPbtk-XL1dnBLVjwCydKDXsNdU_t1ANcdPC-_ScDTx6ZnxeKNzRwyZi1mA_ayP2MvIbpaNdeQss2AnHGOfMKiJLqG20DeVCRQzm8mvmfrDCOeU8eM9bEWy686Ald-pDEBsj21wYroOnAbrHJJhosbC55KTiIUAkukRBPFEmUnBY646jkwoeT7yL2tk9ZJrut-3CXTqtqofSnj8GkQvyAp4rrlU0vYB_OHpty_6_5938wv7XWLc08IWBS65UB" 
               />
             </div>
-            <div className="flex items-end mb-2 w-full max-w-md mx-auto">
-              <span className="font-headline-sm text-headline-sm">Dark Chocolate Fondant</span>
-              <div className="dot-leader"></div>
-              <span className="font-body-md text-on-surface-variant">$14</span>
+            <div className="flex justify-between items-baseline mb-4 w-full max-w-sm mx-auto border-b border-outline-variant/30 pb-4">
+              <span className="font-headline-sm text-headline-sm tracking-wide">Dark Chocolate Fondant</span>
+              <span className="font-label-caps text-label-caps tracking-widest text-on-surface-variant">14</span>
             </div>
-            <p className="text-on-surface-variant font-body-md italic mt-2">70% single-origin cocoa, Madagascar vanilla bean gelato.</p>
+            <p className="text-on-surface-variant font-body-md italic mt-4 max-w-sm mx-auto">70% single-origin cocoa, Madagascar vanilla bean gelato.</p>
           </div>
           <div className="text-center group">
-            <div className="w-full aspect-[4/3] overflow-hidden mb-8">
+            <div className="w-full aspect-square overflow-hidden mb-8">
               <img 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" 
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-[2000ms]" 
                 alt="Lemon Verbena Sorbet" 
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiKWm5VJdgipjVohhNozJHGaWLS9Z7JM7ZVszHovW5XosJ2JdiNmbSJFSieCWIHVylcro76cNVUmIgb4vJmaPoQ2PYGg4qyd1sqYvwda-HUOKLAtYa_YIXqJhnBPwAqGNap08NPguzFoE21BN7Hd4GfEYywQeIQQlAHgWXCqQl_jYRmTwZo43X2Sq9zBR2J3jUPU_m7XUcpAJgPQtsoF0LWJfyFqYhEZAdIohdsnamQ8HhnwptwMW0KQ0E7f1oldwHhnq3RKMdLtS5" 
               />
             </div>
-            <div className="flex items-end mb-2 w-full max-w-md mx-auto">
-              <span className="font-headline-sm text-headline-sm">Lemon Verbena Sorbet</span>
-              <div className="dot-leader"></div>
-              <span className="font-body-md text-on-surface-variant">$12</span>
+            <div className="flex justify-between items-baseline mb-4 w-full max-w-sm mx-auto border-b border-outline-variant/30 pb-4">
+              <span className="font-headline-sm text-headline-sm tracking-wide">Lemon Verbena Sorbet</span>
+              <span className="font-label-caps text-label-caps tracking-widest text-on-surface-variant">12</span>
             </div>
-            <p className="text-on-surface-variant font-body-md italic mt-2">Zesty local lemons, infused verbena, and citrus lace.</p>
+            <p className="text-on-surface-variant font-body-md italic mt-4 max-w-sm mx-auto">Zesty local lemons, infused verbena, and citrus lace.</p>
           </div>
         </div>
       </section>
 
       {/* Wine List CTA */}
-      <section className="bg-surface-container section-padding reveal" id="wine">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
-          <span className="text-label-caps font-label-caps text-on-surface-variant mb-6 block">SOMMELIER'S SELECTION</span>
+      <section className="bg-surface-container section-padding reveal-section" id="wine">
+        <div className="container-custom text-center">
+          <span className="text-label-caps font-label-caps tracking-widest text-on-surface-variant mb-6 block uppercase">Sommelier's Selection</span>
           <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 italic">The Wine List</h2>
-          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+          <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl mx-auto mb-12">
             Pair your meal with a selection from our cellar. From rare vintages to contemporary biodynamic discoveries, our collection is curated to elevate every flavor profile.
           </p>
-          <button className="btn-secondary">
-            Explore the Cellar
-          </button>
+          <Link href="/reservations" className="btn-secondary">
+            Reserve a Table
+          </Link>
         </div>
       </section>
     </div>

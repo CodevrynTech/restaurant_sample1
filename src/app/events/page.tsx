@@ -1,10 +1,41 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Events() {
+  const [formState, setFormState] = useState<"idle" | "sending" | "sent">("idle");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormState("sending");
+    
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'event_inquiry', ...data }),
+      });
+
+      if (response.ok) {
+        setFormState("sent");
+        form.reset();
+        setTimeout(() => setFormState("idle"), 3000);
+      } else {
+        setFormState("idle");
+        alert("Failed to submit inquiry. Please try again.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      setFormState("idle");
+      alert("Failed to submit inquiry. Please try again.");
+    }
+  };
   useEffect(() => {
     // Smooth reveal on scroll for elements
     const observer = new IntersectionObserver(
@@ -65,7 +96,7 @@ export default function Events() {
       </section>
 
       {/* Private Dining: The Spaces */}
-      <section className="section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+      <section className="section-padding container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center mb-32 reveal-fade opacity-0 translate-y-10 transition-all duration-1000">
           <div className="order-2 md:order-1">
             <span className="text-label-caps font-label-caps text-outline mb-4 block">The Library</span>
@@ -125,7 +156,7 @@ export default function Events() {
 
       {/* Corporate Events */}
       <section className="section-padding bg-surface-container-low reveal-fade opacity-0 translate-y-10 transition-all duration-1000">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div className="container-custom">
           <div className="flex flex-col md:flex-row gap-16 items-start">
             <div className="md:w-1/3">
               <h2 className="text-headline-md font-headline-md mb-6">Corporate Excellence</h2>
@@ -150,7 +181,7 @@ export default function Events() {
       </section>
 
       {/* Weddings & Celebrations */}
-      <section className="section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto reveal-fade opacity-0 translate-y-10 transition-all duration-1000">
+      <section className="section-padding container-custom reveal-fade opacity-0 translate-y-10 transition-all duration-1000">
         <div className="text-center mb-20">
           <span className="text-label-caps font-label-caps text-outline mb-4 block">Weddings & Celebrations</span>
           <h2 className="text-headline-md font-headline-md">Bespoke Planning</h2>
@@ -194,7 +225,7 @@ export default function Events() {
 
       {/* Inquiry Form Section */}
       <section className="section-padding bg-primary text-on-primary reveal-fade opacity-0 translate-y-10 transition-all duration-1000" id="inquiry">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
             <div>
               <h2 className="text-display-lg-mobile md:text-display-lg font-display-lg mb-8 italic">Start Your Story</h2>
@@ -212,20 +243,20 @@ export default function Events() {
                 </div>
               </div>
             </div>
-            <form className="space-y-12">
+            <form className="space-y-12" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div className="relative group">
                   <input className="w-full bg-transparent border-b border-on-primary-container py-3 focus:outline-none focus:border-on-primary transition-colors peer placeholder-transparent" id="name" name="name" required type="text" placeholder="Full Name" />
                   <label className="absolute left-0 -top-6 text-label-caps font-label-caps text-on-primary-container peer-placeholder-shown:text-body-md peer-placeholder-shown:top-3 peer-focus:-top-6 peer-focus:text-label-caps peer-focus:text-on-primary transition-all" htmlFor="name">Full Name</label>
                 </div>
                 <div className="relative group">
-                  <select className="w-full bg-transparent border-b border-on-primary-container py-3 focus:outline-none focus:border-on-primary transition-colors appearance-none" id="event_type" name="event_type" defaultValue="">
+                  <select className="w-full bg-transparent border-b border-on-primary-container py-3 focus:outline-none focus:border-on-primary transition-colors appearance-none" id="event_type" name="event_type" defaultValue="" required>
                     <option className="text-primary" disabled value="">Event Type</option>
                     <option className="text-primary" value="private">Private Dinner</option>
                     <option className="text-primary" value="corporate">Corporate Event</option>
                     <option className="text-primary" value="wedding">Wedding / Celebration</option>
                   </select>
-                  <span className="absolute right-0 bottom-3 material-symbols-outlined pointer-events-none">expand_more</span>
+                  <span className="absolute right-0 bottom-3 material-symbols-outlined pointer-events-none text-on-primary-container">expand_more</span>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -242,7 +273,15 @@ export default function Events() {
                 <textarea className="w-full bg-transparent border-b border-on-primary-container py-3 focus:outline-none focus:border-on-primary transition-colors peer placeholder-transparent" id="message" name="message" required rows={4} placeholder="Your Message"></textarea>
                 <label className="absolute left-0 -top-6 text-label-caps font-label-caps text-on-primary-container peer-placeholder-shown:text-body-md peer-placeholder-shown:top-3 peer-focus:-top-6 peer-focus:text-label-caps peer-focus:text-on-primary transition-all" htmlFor="message">Your Message</label>
               </div>
-              <button className="w-full inline-flex items-center justify-center bg-white text-black px-8 py-6 font-label-caps text-[12px] font-semibold uppercase tracking-[0.1em] transition-all hover:opacity-80 hover:scale-[1.02]" type="submit">Submit Inquiry</button>
+              <button 
+                className={`w-full inline-flex items-center justify-center px-8 py-6 font-label-caps text-[12px] font-semibold uppercase tracking-[0.1em] transition-all hover:opacity-80 hover:scale-[1.02] ${
+                  formState === "sent" ? "bg-green-600 text-white" : "bg-white text-black"
+                }`} 
+                type="submit"
+                disabled={formState !== "idle"}
+              >
+                {formState === "idle" ? "Submit Inquiry" : formState === "sending" ? "Sending..." : "Inquiry Sent"}
+              </button>
             </form>
           </div>
         </div>

@@ -62,7 +62,7 @@ export default function Story() {
       </section>
 
       {/* The Lumira Story */}
-      <section className="section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-hidden reveal-section opacity-0">
+      <section className="section-padding container-custom overflow-hidden reveal-section opacity-0">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
           <div className="md:col-span-5 mb-12 md:mb-0">
             <h2 className="font-headline-md text-headline-md mb-8">The Lumira Story</h2>
@@ -92,7 +92,7 @@ export default function Story() {
 
       {/* Our Sourcing (Asymmetric Bento) */}
       <section className="bg-surface-container section-padding reveal-section opacity-0">
-        <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div className="container-custom">
           <div className="text-center mb-20">
             <h2 className="font-headline-md text-headline-md mb-4">Our Sourcing</h2>
             <div className="w-12 h-px bg-outline mx-auto mb-6"></div>
@@ -134,7 +134,7 @@ export default function Story() {
 
       {/* The Space */}
       <section className="section-padding reveal-section opacity-0">
-        <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1">
               <div 
@@ -173,7 +173,7 @@ export default function Story() {
 
       {/* Team Section */}
       <section className="bg-primary text-on-primary section-padding reveal-section opacity-0">
-        <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div className="container-custom">
           <div className="mb-20">
             <h2 className="font-headline-md text-headline-md">The Curators</h2>
           </div>

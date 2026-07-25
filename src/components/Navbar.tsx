@@ -15,12 +15,12 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-outline-variant">
-      <div className="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto max-md:px-margin-mobile">
-        <Link href="/" className="text-headline-sm font-headline-sm tracking-widest uppercase text-primary">
+    <header className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-lg border-b border-outline-variant/30 transition-all duration-300">
+      <div className="flex justify-between items-center w-full container-custom py-6">
+        <Link href="/" className="text-headline-sm font-headline-sm tracking-[0.15em] uppercase text-primary">
           Lumira
         </Link>
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (

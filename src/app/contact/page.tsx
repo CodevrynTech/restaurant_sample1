@@ -27,19 +27,34 @@ export default function Contact() {
     return () => observer.disconnect();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormState("sending");
+    
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
 
-    setTimeout(() => {
-      setFormState("sent");
-      const form = e.target as HTMLFormElement;
-      form.reset();
-      
-      setTimeout(() => {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'contact', ...data }),
+      });
+
+      if (response.ok) {
+        setFormState("sent");
+        form.reset();
+        setTimeout(() => setFormState("idle"), 3000);
+      } else {
         setFormState("idle");
-      }, 3000);
-    }, 1500);
+        alert("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      setFormState("idle");
+      alert("Failed to send message. Please try again.");
+    }
   };
 
   const toggleFAQ = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -70,7 +85,7 @@ export default function Contact() {
       </section>
 
       {/* Main Content: 2-Column Layout */}
-      <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop section-padding reveal-section">
+      <section className="container-custom section-padding reveal-section">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
           {/* Left Column: Form & Map */}
           <div className="lg:col-span-7 space-y-20">
@@ -80,20 +95,20 @@ export default function Contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                   <div className="flex flex-col">
                     <label className="text-label-caps font-label-caps uppercase mb-2">Name</label>
-                    <input className="luxury-input font-body-md" placeholder="Your full name" type="text" required />
+                    <input name="name" className="luxury-input font-body-md" placeholder="Your full name" type="text" required />
                   </div>
                   <div className="flex flex-col">
                     <label className="text-label-caps font-label-caps uppercase mb-2">Email</label>
-                    <input className="luxury-input font-body-md" placeholder="email@example.com" type="email" required />
+                    <input name="email" className="luxury-input font-body-md" placeholder="email@example.com" type="email" required />
                   </div>
                 </div>
                 <div className="flex flex-col">
                   <label className="text-label-caps font-label-caps uppercase mb-2">Subject</label>
-                  <input className="luxury-input font-body-md" placeholder="Reservation, Event Inquiry, or Feedback" type="text" required />
+                  <input name="subject" className="luxury-input font-body-md" placeholder="Reservation, Event Inquiry, or Feedback" type="text" required />
                 </div>
                 <div className="flex flex-col">
                   <label className="text-label-caps font-label-caps uppercase mb-2">Message</label>
-                  <textarea className="luxury-input font-body-md resize-none" placeholder="How can we assist you today?" rows={4} required></textarea>
+                  <textarea name="message" className="luxury-input font-body-md resize-none" placeholder="How can we assist you today?" rows={4} required></textarea>
                 </div>
                 <button 
                   className={`btn-primary w-full md:w-auto ${

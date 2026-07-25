@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-surface-container border-t border-outline-variant">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-16 max-w-container-max mx-auto max-md:px-margin-mobile">
+      <div className="container-custom grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-gutter py-16">
         <div className="md:col-span-1">
           <div className="text-headline-sm font-headline-sm tracking-widest uppercase text-on-surface mb-6">Lumira</div>
           <p className="text-on-surface-variant text-body-md mb-8">Mediterranean soul, modern spirit.</p>
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="px-margin-desktop py-8 border-t border-outline-variant max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4 max-md:px-margin-mobile">
+      <div className="container-custom py-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-xs text-on-surface-variant">© {new Date().getFullYear()} Lumira. All rights reserved.</p>
         <p className="text-xs text-on-surface-variant uppercase tracking-widest">Quiet Luxury Hospitality</p>
       </div>
