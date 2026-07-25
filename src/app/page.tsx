@@ -218,7 +218,7 @@ export default function Home() {
               <img 
                 className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000 group-hover:opacity-100" 
                 alt="The Coastal Terrace" 
-                src="https://images.unsplash.com/photo-1592861119250-46aba0150bf5?auto=format&fit=crop&q=80&w=2560" 
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=2560" 
               />
               <div className="absolute inset-0 overlay-dark pointer-events-none"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full z-10">
@@ -230,7 +230,7 @@ export default function Home() {
               <img 
                 className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000 group-hover:opacity-100" 
                 alt="The Private Lounge" 
-                src="https://images.unsplash.com/photo-1600891964092-4b16e4587d50?auto=format&fit=crop&q=80&w=2560" 
+                src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=2560" 
               />
               <div className="absolute inset-0 overlay-dark pointer-events-none"></div>
               <div className="absolute bottom-0 left-0 p-8 w-full z-10">

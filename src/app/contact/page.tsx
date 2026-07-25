@@ -130,7 +130,7 @@ export default function Contact() {
                   <img 
                     className="w-full h-full object-cover opacity-60" 
                     alt="Map of Monaco" 
-                    src="https://images.unsplash.com/photo-1414235077428-338988a2e8c0?auto=format&fit=crop&q=80&w=2560" 
+                    src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&q=80&w=2560" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent"></div>
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">

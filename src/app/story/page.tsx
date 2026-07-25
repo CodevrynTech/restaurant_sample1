@@ -82,7 +82,7 @@ export default function Story() {
             <div className="absolute -bottom-8 -left-8 md:-left-16 w-1/2 hidden md:block">
               <div 
                 className="aspect-square bg-cover bg-center border-[8px] border-background" 
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1414235077428-338988a2e8c0?auto=format&fit=crop&q=80&w=2560')" }}
+                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&q=80&w=2560')" }}
                 title="Heritage tomato"
               ></div>
             </div>

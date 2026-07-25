@@ -22,13 +22,13 @@ const galleryItems = [
     id: 3,
     category: "process",
     title: "The Garnish",
-    src: "https://images.unsplash.com/photo-1592861119250-46aba0150bf5?auto=format&fit=crop&q=80&w=2560"
+    src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=2560"
   },
   {
     id: 4,
     category: "food",
     title: "Pure Elements",
-    src: "https://images.unsplash.com/photo-1600891964092-4b16e4587d50?auto=format&fit=crop&q=80&w=2560"
+    src: "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=2560"
   },
   {
     id: 5,
@@ -40,7 +40,7 @@ const galleryItems = [
     id: 6,
     category: "process",
     title: "The Pour",
-    src: "https://images.unsplash.com/photo-1565557613262-b8eb92040332?auto=format&fit=crop&q=80&w=2560"
+    src: "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80&w=2560"
   }
 ];
 

@@ -214,7 +214,7 @@ export default function Reservations() {
         <section className="hidden lg:block w-1/2 relative min-h-full overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-[10000ms] hover:scale-110" 
-            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1565557613262-b8eb92040332?auto=format&fit=crop&q=80&w=2560')" }}
+            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80&w=2560')" }}
             title="Private corner table"
           ></div>
           <div className="absolute inset-0 overlay-dark pointer-events-none"></div>
