@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | Lumira</title>
+<!-- Google Fonts: Bodoni Moda (Display/Serif) and DM Sans (Body/Sans) -->
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=DM+Sans:ital,opsz,wght@0,100..1000;1,100..1000&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#261900",
+                    "outline": "#747878",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "background": "#f9f9f9",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-container-highest": "#e2e2e2",
+                    "inverse-on-surface": "#f1f1f1",
+                    "primary-container": "#1c1b1b",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#dadada",
+                    "tertiary-container": "#261900",
+                    "on-primary-container": "#858383",
+                    "on-surface": "#1a1c1c",
+                    "surface-bright": "#f9f9f9",
+                    "on-primary-fixed": "#1c1b1b",
+                    "surface-container": "#eeeeee",
+                    "on-primary-fixed-variant": "#474646",
+                    "inverse-surface": "#2f3131",
+                    "tertiary-fixed": "#ffdea5",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1a1c1c",
+                    "primary": "#000000",
+                    "secondary-fixed": "#e5e2db",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "on-surface-variant": "#444748",
+                    "outline-variant": "#c4c7c7",
+                    "on-secondary-container": "#65645f",
+                    "primary-fixed": "#e5e2e1",
+                    "on-secondary-fixed-variant": "#474742",
+                    "tertiary": "#000000",
+                    "secondary": "#5f5e59",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#a17f3b",
+                    "surface-container-high": "#e8e8e8",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "on-secondary-fixed": "#1c1c18",
+                    "surface-variant": "#e2e2e2",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#5f5e5e",
+                    "surface": "#f9f9f9",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "secondary-fixed-dim": "#c9c6c0",
+                    "secondary-container": "#e5e2db"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "gutter": "32px",
+                    "margin-mobile": "20px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Bodoni Moda"],
+                    "label-caps": ["DM Sans"],
+                    "headline-md": ["Bodoni Moda"],
+                    "body-md": ["DM Sans"],
+                    "body-lg": ["DM Sans"],
+                    "display-lg-mobile": ["Bodoni Moda"],
+                    "headline-sm": ["Bodoni Moda"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .dot-leader {
+            flex-grow: 1;
+            border-bottom: 1px dotted #747878;
+            margin: 0 8px 4px 8px;
+        }
+        .fade-in { animation: fadeIn 1.2s ease-out forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-background border-b border-outline-variant flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-[1440px] mx-auto left-0 right-0">
+<div class="text-headline-sm font-headline-sm tracking-widest uppercase text-primary">Lumira</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps" href="#">Menu</a>
+<a class="text-primary border-b border-primary pb-1 text-label-caps font-label-caps" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps" href="#">Gallery</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps" href="#">Events</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 text-label-caps font-label-caps hover:opacity-80 transition-opacity">
+            Reserve a Table
+        </button>
+</nav>
+<main class="mt-20">
+<!-- Hero Section -->
+<section class="relative w-full h-[870px] overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic, high-resolution photograph of a professional kitchen team in motion during service. The lighting is dramatic and warm, highlighting the steam rising from polished copper pans and the intense focus on the chefs' faces. The aesthetic is clean, minimalist, and upscale, following a quiet luxury palette of deep charcoal shadows and bright ivory highlights. The composition is dynamic, capturing the choreographed chaos of fine dining." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASMUPJ0DW0DznfyNjpRKZSt75LnhbBNKlMB69ZLP3mueJPHtrJsiAKbxq5fsbScZGOAMMI6XDaSA4IyK092xWKIkmVBZTL2OfMtlufi1aD8Ym4eAL5oUDmGeURRvbFmuN38Rl6mGE4Hqy6AWlzjqAKV5wHIHCpZCU5ldLw2orNmCc0DU7zDUB_9caHeIkEnuFlt0DAy2TAxntou0XkGjm3skPthK5m56Y47XE9rpBUu-oqJIhAClnFdlTCDkDWLighD1TqelUbFgnp')"></div>
+<div class="absolute inset-0 bg-black/20"></div>
+</div>
+<div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-margin-mobile">
+<span class="text-white text-label-caps font-label-caps tracking-widest mb-4 fade-in">Our Philosophy</span>
+<h1 class="text-white font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg italic fade-in" style="animation-delay: 0.2s;">
+                    Crafted with Passion
+                </h1>
+</div>
+</section>
+<!-- The Lumira Story -->
+<section class="py-24 md:py-40 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 mb-12 md:mb-0" data-aos="fade-right">
+<h2 class="font-headline-md text-headline-md mb-8">The Lumira Story</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+                        Born on the rugged cliffs of a forgotten coastal village, Lumira began as a modest hearth for local fishermen. It was here that we learned the language of the seasons—how the salt air flavors the wild thyme and how the morning catch dictates the evening menu.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Our evolution from a seaside sanctuary to a culinary destination has been guided by a single principle: reverence. We honor the heritage of Mediterranean technique while embracing the clarity of modern minimalism, creating a space where time slows down and every flavor tells a story of the land and sea.
+                    </p>
+</div>
+<div class="md:col-start-7 md:col-span-6 relative">
+<div class="aspect-[4/5] w-full bg-cover bg-center shadow-sm" data-alt="A breathtaking landscape photograph of a sun-drenched Mediterranean coastal village at golden hour. The architecture is a blend of ancient stone and modern glass, overlooking a shimmering turquoise sea. The atmosphere is serene and exclusive, evoking a sense of heritage and high-end travel. Soft, warm lighting bathes the scene, creating a peaceful and luxurious mood consistent with the Lumira brand identity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCNCNg5-B-B5G6UfNVILaATCPrSKpr9Bt1gjdRqAbOTMaW-wRAo1FZwjryQ8sbhW5_JXT_IZJRzXShnk8j54khZzkjZ_pd3ES77XOdsAgnCQxC1MUFFfhEEgCl0s7IzxUkOuYx6DI8yykNbCxaUJyj1NQ1OgBnptMLmH1bcznMG0Zqdrr7B_zxjGsFcC5N25DoW6bqT-YR8JizTHsSBl_3VTFfYHEGoqjQwcOWODJxcq1M2cuJcUiIKgPLAPmAQAks2YeFs6MJ7h-g8')"></div>
+<div class="absolute -bottom-8 -left-8 md:-left-16 w-1/2 hidden md:block">
+<div class="aspect-square bg-cover bg-center border-[8px] border-background" data-alt="A close-up, high-fashion food photography shot of a single, perfectly plated ingredient. A vibrant, sun-ripened heritage tomato rests on a piece of rough-hewn ivory marble, drizzled with translucent emerald olive oil. The lighting is high-key and elegant, emphasizing the texture and purity of the produce. The image reflects the quiet luxury and focus on sourcing that defines the restaurant." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBioMZ0ltuMb5otylequBS18CusTFo1fAuHwph4YoNMWT2gLijDF0fajf_OYv9vmprCr_cajTE7P5jIPRgsWXcB-pmIwi2jUfC8QAwvwpmeJ_WyEoV7sw95zJtIpMCC1qrv12QHv1gB8CUTS0PwpetICKIJCaIRGLzTmBRQxlM-V5lOIKwOZnUwve--LIedBeDR1C1xXKy8HNGknnUhTsj-Y9bonc7DsDR9ndAXcbaTOn0xEu5OSDMb7xEvquZTwYEb1hlp-Vcc0by')"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Sourcing (Asymmetric Bento) -->
+<section class="bg-surface-container py-24 md:py-40">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline-md text-headline-md mb-4">Our Sourcing</h2>
+<div class="w-12 h-px bg-outline mx-auto mb-6"></div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                        Sustainability isn't a trend; it's our foundation. We partner with eighteen local family farms to ensure every ingredient is harvested at its peak.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="flex flex-col space-y-4">
+<div class="h-64 bg-cover bg-center" data-alt="A minimalist, top-down photograph of a wooden crate filled with earthy, artisanal root vegetables and vibrant leafy greens. The lighting is soft and natural, suggesting a misty morning harvest. The colors are muted and sophisticated, focusing on deep greens, rich browns, and creamy whites. The composition is clean and organized, reflecting a commitment to organic, local farming and quality." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxue7es6XQIjSHbXfgv3akAnx6CnPyGGyEZRSIihQ73I0dUpPvCT-iGe0ZRo9ohybw9CLZxlISXMcPr1a33HZoYcOn3e0ntqE1CmVI9ImZu6HgKzn-B3kraQOCVN8Kh_Uq6Wm-nlRPTgu2aQ2JliZhe97Xt-7xJV3GrqXNRD8yS3zK8tN21P6VoR1LklIKmM6-YTsdasWOVaueuhIYqkN_aXRuStWbd47UGdPIoVp1X3pTytooazrXNRr9jcvtfiVcEL2BmaROeGTB')"></div>
+<h3 class="font-headline-sm text-headline-sm">The Soil</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Regenerative practices that nourish the earth that feeds us.</p>
+</div>
+<div class="flex flex-col space-y-4 translate-y-0 md:translate-y-12">
+<div class="h-64 bg-cover bg-center" data-alt="A macro photograph of fresh honeycomb glistening in sunlight, captured in a minimalist garden setting. The golden hues of the honey contrast beautifully against a soft-focus background of ivory-colored stone and pale green herbs. The mood is tactile and rich, highlighting the luxury of natural, raw ingredients sourced directly from local producers. The lighting is brilliant and clear." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCkD6SmnLrRAB_tLpIitWf4vaHZIV9Xq_OpUzY8ziLR1yy3RjVvWg0o9TRYCrfVoQVj_wnZ99H1qVPNLuSKSFyYOkF2xcGp-tu_snbb1qp1Kfp7aCVtUVMQ3MLUU-q_FrbI3bFximVDM0AxeIsVYaOth1nzGh71VoqvgNOA4uEn_QjgW0gglxw5WHcfMl4Uo5gX_DigYkVOXYwEarln8KCQdUAywOs6XcPLd6SQxoF-h9Z-jOftJ0yQ-FHdSKirDrQAq-JofCSMf2Fo')"></div>
+<h3 class="font-headline-sm text-headline-sm">The Hive</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Supporting local biodiversity through our on-site apiary and wild forage programs.</p>
+</div>
+<div class="flex flex-col space-y-4">
+<div class="h-64 bg-cover bg-center" data-alt="A professional close-up shot of a fisherman's weathered hands holding a vibrant, silvery sea bass. The scales glisten with ocean water under a bright, overcast sky. The aesthetic is raw yet refined, emphasizing craftsmanship and the direct connection between the source and the kitchen. The background is a soft blue-grey, maintaining the light-mode, minimalist palette of the brand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBozWiANOpHS5ACsU9UHePLnAN4rkh_JYl3xFjAEuvRfQ24n3PJhEXQRZ0Sy0ounT3tP6YePHwidykMWQKDtVF4UtD2FCZNwx-PmG3gWDL56XAOTNIcGKHqkhHE_4zSvFmxVeYCRAQYoBg_wrh5KKSQ04zaPTnzYZbU9ZiT6kQMpgvQOJZuOZAsalUgE4PdwQ7o-ynngEmav7NsfTXyBIo5_l3esJsEXES8y3-XcmHq5CAvYSKnbG9tYzQ0vMAoHs8m9Wk1nZKRcYOR')"></div>
+<h3 class="font-headline-sm text-headline-sm">The Sea</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Traceable, small-scale fishing that respects maritime ecosystems.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Space -->
+<section class="py-24 md:py-40">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<div class="aspect-square bg-cover bg-center" data-alt="An architectural interior photograph of a luxury restaurant dining room. The space features soaring ceilings, minimalist white walls, and floor-to-ceiling windows overlooking a lush, curated garden. The furniture consists of sharp-edged charcoal chairs and ivory-clothed tables. The lighting is soft and ambient, creating a serene, editorial atmosphere. The design is a masterclass in quiet luxury and modern minimalism." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAINj_tYKqvCj4xKJKfg-pVws3uaGLoJJpBElIUToZ-15LNiLWFxg2-x3urDoYaoVueJeJwwwNN-7yKz7exnulc4soJ6pZip5gy3pQ-C6l1Xng5U5PzdmshkOR5d4iRUILt0T0FkO6xfZFoQxbKXol9Us6v3Q5j7nUpNK2Pnn6WTj6S29Enbg4aMUJg_jNJbuoJUsoExuSEWeDgDoe7TGN04Tr5U-ZD6KSckRZzrNP3aAnU_cLAEQ9Hqdp4TUYnjBc2a3ivNcrkg3i5')"></div>
+</div>
+<div class="order-1 md:order-2">
+<span class="text-label-caps font-label-caps text-on-surface-variant tracking-[0.2em] block mb-6">Environment</span>
+<h2 class="font-display-lg-mobile md:font-headline-md text-display-lg-mobile md:text-headline-md mb-8">The Space</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                            Designed by atelier MIRA, our interior is a dialogue between raw stone and refined light. We’ve stripped away the noise of traditional fine dining to reveal the essential beauty of the materials.
+                        </p>
+<div class="space-y-6">
+<div class="flex items-end">
+<span class="font-label-caps text-label-caps uppercase">Architectural Concept</span>
+<div class="dot-leader"></div>
+<span class="font-label-caps text-label-caps">Elemental</span>
+</div>
+<div class="flex items-end">
+<span class="font-label-caps text-label-caps uppercase">Materials</span>
+<div class="dot-leader"></div>
+<span class="font-label-caps text-label-caps">Travertine &amp; Oak</span>
+</div>
+<div class="flex items-end">
+<span class="font-label-caps text-label-caps uppercase">Atmosphere</span>
+<div class="dot-leader"></div>
+<span class="font-label-caps text-label-caps">Quiet Luxury</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="bg-primary text-on-primary py-24 md:py-40">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-20">
+<h2 class="font-headline-md text-headline-md">The Curators</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Sommelier -->
+<div class="group">
+<div class="overflow-hidden mb-8">
+<div class="aspect-[3/4] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A sophisticated portrait of a head sommelier in a minimalist, modern wine cellar. He is wearing a sharp, dark charcoal suit and is examining a bottle with focused expertise. The lighting is low and moody, reflecting the exclusive and knowledgeable nature of his role. The background features clean lines of wine racks against a dim, warm-toned stone wall. The overall vibe is one of high-end professionalism and quiet luxury." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8lmJRgefqlio8R2FwW8Jfcc-Vt2RJYsfek_u2adRqX1lZS_uX8OBOh8iVuBxyFr4LGaYgBxqYex-AoJzB-abjxJEcnuaoZXaIhwLbkZhH4b8EaIP4qi8ZWocmMO2xH42dfX4pBijEY30NR2fSTZALl2UFu49lohXShjxoFyja9x1Km01F1XyScv1h_3v5R-FHr4QyP9SvOdTJI6bweoOOHDIAtZ7Vkhnx-Ic2xCgay1y3pVf4H4LEbq8P-7RG2U8o5Vcm8pOdmbix')"></div>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Elena Vasseur</h3>
+<p class="text-on-primary-container font-label-caps text-label-caps uppercase mb-4">Head Sommelier</p>
+<p class="font-body-md text-body-md opacity-80 max-w-sm">
+                            With a decade spent in the vineyards of Bordeaux and Piedmont, Elena curates our cellar with a focus on biodynamic producers and rare vintages that speak of their terroir.
+                        </p>
+</div>
+<!-- Pastry Chef -->
+<div class="group md:mt-24">
+<div class="overflow-hidden mb-8">
+<div class="aspect-[3/4] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A refined portrait of a female pastry chef working in a bright, white-walled kitchen studio. She is delicately placing a micro-herb on a sculptural, minimalist dessert. Her uniform is a crisp, white chef's coat. The lighting is high-key and soft, emphasizing precision and artistry. The setting is clean, modern, and high-end, aligning with the Lumira editorial style. The image captures the intersection of craftsmanship and modern design." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCshNLVR0GerJEIaxVY0ALX4uiP7zlGoyYxzeHu9hT4l1zs44J7pdcHp_xPqy0ms2AfnydvPRZXCiqz2fG35bsw_pGZa2kTJaprVYJJKWJx8a0QS4zM6aJoP3gjRNoNSYuMQT8hMuZestnbYOFc8E0qd7Zw2HSEZobqXwHHu5ZsbIBC4rYqRN5QQgUOyGTh07BBTL_Bv5flKyd6Bc_O2Wn3HGQnJ5bea0ynyuqmQsKALV2snr1eekuIhUI4R9wiVPL9gjQlqYFM4Uy-')"></div>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Julian Marc</h3>
+<p class="text-on-primary-container font-label-caps text-label-caps uppercase mb-4">Master Patissier</p>
+<p class="font-body-md text-body-md opacity-80 max-w-sm">
+                            Julian’s creations are studies in balance—texture, temperature, and sweetness. He draws inspiration from modernist architecture to build desserts that are as visual as they are visceral.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container border-t border-outline-variant w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-16 max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-headline-sm font-headline-sm tracking-widest uppercase text-on-surface mb-6">Lumira</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Fine dining defined by coastal heritage and modern minimalism.
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-caps text-label-caps text-on-surface">Explore</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Menu</a>
+<a class="text-primary font-bold font-body-md text-body-md" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Gallery</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Careers</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-caps text-label-caps text-on-surface">Legal</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Accessibility</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-caps text-label-caps text-on-surface">Connect</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Newsletter</a>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop py-8 max-w-container-max mx-auto border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+<span class="font-label-caps text-label-caps text-on-surface-variant">© 2024 Lumira. All rights reserved.</span>
+<div class="flex space-x-6">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">language</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">wine_bar</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">restaurant</span>
+</div>
+</div>
+</footer>
+<script>
+        // Simple parallax effect for hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.relative.w-full.h-\\[85vh\\] div:first-child');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.4}px)`;
+            }
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body></html>

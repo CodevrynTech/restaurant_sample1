@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reserve Your Table | Lumira</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .dot-leader::after {
+            content: "";
+            flex-grow: 1;
+            border-bottom: 1px dotted #747878;
+            margin: 0 8px;
+            margin-bottom: 4px;
+        }
+        .underline-input {
+            border: none;
+            border-bottom: 1px solid #c4c7c7;
+            background: transparent;
+            border-radius: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .underline-input:focus {
+            outline: none;
+            box-shadow: none;
+            border-bottom: 1px solid #000000;
+        }
+        /* Custom scrollbar for clean UI */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #f9f9f9; }
+        ::-webkit-scrollbar-thumb { background: #d1d1d1; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed": "#261900",
+                      "outline": "#747878",
+                      "primary-fixed-dim": "#c8c6c5",
+                      "background": "#f9f9f9",
+                      "inverse-primary": "#c8c6c5",
+                      "surface-container-highest": "#e2e2e2",
+                      "inverse-on-surface": "#f1f1f1",
+                      "primary-container": "#1c1b1b",
+                      "on-tertiary": "#ffffff",
+                      "surface-dim": "#dadada",
+                      "tertiary-container": "#261900",
+                      "on-primary-container": "#858383",
+                      "on-surface": "#1a1c1c",
+                      "surface-bright": "#f9f9f9",
+                      "on-primary-fixed": "#1c1b1b",
+                      "surface-container": "#eeeeee",
+                      "on-primary-fixed-variant": "#474646",
+                      "inverse-surface": "#2f3131",
+                      "tertiary-fixed": "#ffdea5",
+                      "error": "#ba1a1a",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#1a1c1c",
+                      "primary": "#000000",
+                      "secondary-fixed": "#e5e2db",
+                      "error-container": "#ffdad6",
+                      "on-error-container": "#93000a",
+                      "on-surface-variant": "#444748",
+                      "outline-variant": "#c4c7c7",
+                      "on-secondary-container": "#65645f",
+                      "primary-fixed": "#e5e2e1",
+                      "on-secondary-fixed-variant": "#474742",
+                      "tertiary": "#000000",
+                      "secondary": "#5f5e59",
+                      "on-error": "#ffffff",
+                      "on-tertiary-container": "#a17f3b",
+                      "surface-container-high": "#e8e8e8",
+                      "tertiary-fixed-dim": "#e9c176",
+                      "on-secondary-fixed": "#1c1c18",
+                      "surface-variant": "#e2e2e2",
+                      "on-primary": "#ffffff",
+                      "surface-tint": "#5f5e5e",
+                      "surface": "#f9f9f9",
+                      "surface-container-low": "#f3f3f3",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#5d4201",
+                      "secondary-fixed-dim": "#c9c6c0",
+                      "secondary-container": "#e5e2db"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "gutter": "32px",
+                      "margin-mobile": "20px",
+                      "container-max": "1200px"
+              },
+              "fontFamily": {
+                      "display-lg": ["Bodoni Moda"],
+                      "label-caps": ["DM Sans"],
+                      "headline-md": ["Bodoni Moda"],
+                      "body-md": ["DM Sans"],
+                      "body-lg": ["DM Sans"],
+                      "display-lg-mobile": ["Bodoni Moda"],
+                      "headline-sm": ["Bodoni Moda"]
+              },
+              "fontSize": {
+                      "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                      "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                      "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                      "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                      "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                      "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                      "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background border-b border-outline-variant flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full mx-auto">
+<div class="text-headline-sm font-headline-sm tracking-widest uppercase text-primary">Lumira</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps uppercase" href="#">Menu</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps uppercase" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps uppercase" href="#">Gallery</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps uppercase" href="#">Events</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps uppercase" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2.5 text-label-caps font-label-caps uppercase hover:opacity-80 transition-opacity">
+            Reserve a Table
+        </button>
+</header>
+<main class="pt-24 min-h-screen">
+<div class="flex flex-col lg:flex-row min-h-[calc(100vh-96px)]">
+<!-- Form Section -->
+<section class="w-full lg:w-1/2 px-margin-mobile md:px-margin-desktop py-12 flex flex-col justify-center">
+<div class="max-w-xl mx-auto w-full" id="booking-container">
+<header class="mb-12">
+<span class="text-label-caps font-label-caps uppercase text-on-surface-variant tracking-widest block mb-4">Availability</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4">Reserve Your Table</h1>
+<p class="text-on-surface-variant max-w-md">Experience culinary excellence in a setting defined by quiet luxury and intentional design.</p>
+</header>
+<form class="space-y-10" id="reservation-form">
+<!-- Step 1: Experience -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col space-y-2">
+<label class="text-label-caps font-label-caps uppercase text-on-surface-variant">Date</label>
+<input class="underline-input text-body-md font-body-md py-2" required="" type="date"/>
+</div>
+<div class="flex flex-col space-y-2">
+<label class="text-label-caps font-label-caps uppercase text-on-surface-variant">Time</label>
+<select class="underline-input text-body-md font-body-md py-2 appearance-none" required="">
+<option disabled="" selected="" value="">Select Time</option>
+<option>18:00</option>
+<option>18:30</option>
+<option>19:00</option>
+<option>19:30</option>
+<option>20:00</option>
+<option>20:30</option>
+<option>21:00</option>
+</select>
+</div>
+<div class="flex flex-col space-y-2">
+<label class="text-label-caps font-label-caps uppercase text-on-surface-variant">Party Size</label>
+<select class="underline-input text-body-md font-body-md py-2 appearance-none" required="">
+<option value="1">1 Person</option>
+<option selected="" value="2">2 People</option>
+<option value="3">3 People</option>
+<option value="4">4 People</option>
+<option value="5">5 People</option>
+<option value="6+">6+ (Group)</option>
+</select>
+</div>
+</div>
+<!-- Step 2: Contact -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col space-y-2">
+<label class="text-label-caps font-label-caps uppercase text-on-surface-variant">Full Name</label>
+<input class="underline-input text-body-md font-body-md py-2" placeholder="John Doe" required="" type="text"/>
+</div>
+<div class="flex flex-col space-y-2">
+<label class="text-label-caps font-label-caps uppercase text-on-surface-variant">Email Address</label>
+<input class="underline-input text-body-md font-body-md py-2" placeholder="john@example.com" required="" type="email"/>
+</div>
+<div class="flex flex-col space-y-2 lg:col-span-2">
+<label class="text-label-caps font-label-caps uppercase text-on-surface-variant">Phone Number</label>
+<input class="underline-input text-body-md font-body-md py-2" placeholder="+1 (555) 000-0000" required="" type="tel"/>
+</div>
+</div>
+<!-- Special Requests -->
+<div class="flex flex-col space-y-2">
+<label class="text-label-caps font-label-caps uppercase text-on-surface-variant">Special Requests</label>
+<textarea class="underline-input text-body-md font-body-md py-2 resize-none" placeholder="Allergies, celebrations, or table preferences..." rows="2"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full bg-primary text-on-primary py-4 text-label-caps font-label-caps uppercase tracking-widest hover:opacity-90 transition-all active:scale-[0.98]" type="submit">
+                                Confirm Reservation Request
+                            </button>
+</div>
+</form>
+<!-- Success State (Hidden by default) -->
+<div class="hidden text-center py-12 animate-in fade-in duration-700" id="success-state">
+<span class="material-symbols-outlined text-6xl text-primary mb-6 block">check_circle</span>
+<h2 class="font-headline-md text-headline-md mb-4">Request Sent</h2>
+<p class="text-on-surface-variant mb-8 max-w-sm mx-auto">Thank you for choosing Lumira. Our concierge will review your request and confirm via email within the hour.</p>
+<button class="border border-primary text-primary px-8 py-3 text-label-caps font-label-caps uppercase hover:bg-primary hover:text-on-primary transition-all" onclick="window.location.reload()">
+                            Back to Booking
+                        </button>
+</div>
+<!-- Policies & Dress Code -->
+<div class="mt-20 border-t border-outline-variant pt-10 grid grid-cols-1 md:grid-cols-2 gap-8 opacity-60">
+<div>
+<h4 class="text-label-caps font-label-caps uppercase text-on-surface mb-3 tracking-widest">Booking Policy</h4>
+<ul class="text-body-md space-y-2 text-on-surface-variant">
+<li>15-minute grace period for arrivals</li>
+<li>Cancellations required 24h in advance</li>
+<li>Parties of 6+ require credit card hold</li>
+</ul>
+</div>
+<div>
+<h4 class="text-label-caps font-label-caps uppercase text-on-surface mb-3 tracking-widest">Dress Code</h4>
+<p class="text-body-md text-on-surface-variant leading-relaxed">
+                                Elegant smart-casual. We kindly ask our guests to refrain from wearing sportswear or beachwear.
+                            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Image/Visual Section -->
+<section class="hidden lg:block w-1/2 relative min-h-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-10000 hover:scale-110" data-alt="A cinematic, high-end interior photograph of a private corner table in a Mediterranean-style fine dining restaurant. A large floor-to-ceiling window overlooks a soft, twilight coastline. On the table sits a single crystal glass of white wine and a minimalist vase with a white orchid. The room is bathed in warm, low-key lighting, featuring ivory walls, charcoal accents, and clean architectural lines. The atmosphere is intimate, exclusive, and quiet." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB84WCjiVHlIek2h7T910zOVhQeJ2PqK2-iqnN0Q45T9s1LplT-DelEqMOzv5lUpPXG3IXs1QjOEoyxkJz4dbs6kDUm50KDEU4MtDfbTdWrFnyMzdLqNUWjDY35che8iVV3fLxzpwhPKXIlTp4qPp12CwBmlbQxv8nVp0x9pmHo5e23QFWVnjWtwvWF9CaF3hbGBM8dZJNFthTHiH7a0ulKkCVr54Xn-bdUI4xBkzhu2jsr7Ibf1SwjrzkeCY5f_ocZoYSFgOfGSG3B')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-16 left-16 right-16">
+<p class="font-headline-md text-white text-3xl italic opacity-90 leading-snug">
+                        "The art of hospitality is not just in the service, but in the silence between the moments."
+                    </p>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container border-t border-outline-variant w-full relative">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-16 max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-headline-sm font-headline-sm tracking-widest uppercase text-on-surface mb-6">Lumira</div>
+<p class="text-body-md text-on-surface-variant pr-8">Curating moments of Mediterranean elegance and culinary mastery.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="text-label-caps font-label-caps uppercase mb-2">Explore</h5>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Our Menu</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">The Gallery</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Private Events</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="text-label-caps font-label-caps uppercase mb-2">Legal</h5>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="text-label-caps font-label-caps uppercase mb-2">Contact</h5>
+<p class="text-on-surface-variant">reservations@lumira.com</p>
+<p class="text-on-surface-variant">+1 (234) 567-890</p>
+<div class="flex gap-4 mt-2">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">share</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">language</span>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center text-label-caps font-label-caps text-on-surface-variant uppercase tracking-widest">
+<span>© 2024 Lumira. All rights reserved.</span>
+<div class="flex gap-8 mt-4 md:mt-0">
+<span>Accessibility</span>
+<span>Sitemap</span>
+</div>
+</div>
+</footer>
+<script>
+        // Form Logic
+        document.getElementById('reservation-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Interaction: Fade out form and header
+            const form = this;
+            const container = document.getElementById('booking-container');
+            const success = document.getElementById('success-state');
+            const header = container.querySelector('header');
+            const footerInfo = container.querySelector('.mt-20');
+
+            form.classList.add('opacity-0', 'transition-all', 'duration-500');
+            header.classList.add('opacity-0', 'transition-all', 'duration-500');
+            footerInfo.classList.add('opacity-0', 'transition-all', 'duration-500');
+
+            setTimeout(() => {
+                form.style.display = 'none';
+                header.style.display = 'none';
+                footerInfo.style.display = 'none';
+                
+                success.classList.remove('hidden');
+                success.classList.add('block');
+                
+                // Visual feedback
+                container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 500);
+        });
+
+        // Floating Micro-Interactions
+        document.querySelectorAll('.underline-input').forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.querySelector('label').classList.replace('text-on-surface-variant', 'text-primary');
+            });
+            input.addEventListener('blur', () => {
+                input.parentElement.querySelector('label').classList.replace('text-primary', 'text-on-surface-variant');
+            });
+        });
+    </script>
+</body></html>
