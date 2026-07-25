@@ -97,7 +97,7 @@ export default function Story() {
             <h2 className="font-headline-md text-headline-md mb-4">Our Sourcing</h2>
             <div className="w-12 h-px bg-outline mx-auto mb-6"></div>
             <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
-              Sustainability isn't a trend; it's our foundation. We partner with eighteen local family farms to ensure every ingredient is harvested at its peak.
+              Sustainability isn&apos;t a trend; it&apos;s our foundation. We partner with eighteen local family farms to ensure every ingredient is harvested at its peak.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">

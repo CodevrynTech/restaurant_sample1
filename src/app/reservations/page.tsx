@@ -220,7 +220,7 @@ export default function Reservations() {
           <div className="absolute inset-0 overlay-dark pointer-events-none"></div>
           <div className="absolute bottom-16 left-16 right-16">
             <p className="font-headline-md text-white text-3xl italic opacity-90 leading-snug">
-              "The art of hospitality is not just in the service, but in the silence between the moments."
+              &quot;The art of hospitality is not just in the service, but in the silence between the moments.&quot;
             </p>
           </div>
         </section>

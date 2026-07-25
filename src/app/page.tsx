@@ -185,7 +185,7 @@ export default function Home() {
                 With over two decades of experience in Michelin-starred kitchens across the Mediterranean coast, Marcelle Vance brings a rare blend of technical precision and poetic intuition to Lumira. 
               </p>
               <p className="text-body-md text-on-surface-variant mb-10 leading-relaxed">
-                "The ingredient is the master; I am merely the translator," says Vance. Her approach is reductive—stripping away the unnecessary to reveal the soul of each flavor. Every dish at Lumira is a testament to this pursuit of purity and elegance.
+                &quot;The ingredient is the master; I am merely the translator,&quot; says Vance. Her approach is reductive—stripping away the unnecessary to reveal the soul of each flavor. Every dish at Lumira is a testament to this pursuit of purity and elegance.
               </p>
               <div className="flex items-center gap-4">
                 <div className="h-12 w-px bg-outline-variant"></div>
@@ -252,7 +252,7 @@ export default function Home() {
                 key={index}
                 className={`absolute inset-0 transition-opacity duration-1000 ${index === currentTestimonialIndex ? 'opacity-100' : 'opacity-0'}`}
               >
-                <p className="text-headline-sm font-headline-sm italic mb-6">"{testimonial.quote}"</p>
+                <p className="text-headline-sm font-headline-sm italic mb-6">&quot;{testimonial.quote}&quot;</p>
                 <span className="text-label-caps text-outline">— {testimonial.author}</span>
               </div>
             ))}

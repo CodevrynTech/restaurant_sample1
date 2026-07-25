@@ -182,7 +182,7 @@ export default function Menu() {
       {/* Wine List CTA */}
       <section className="bg-surface-container section-padding reveal-section" id="wine">
         <div className="container-custom text-center">
-          <span className="text-label-caps font-label-caps tracking-widest text-on-surface-variant mb-6 block uppercase">Sommelier's Selection</span>
+          <span className="text-label-caps font-label-caps tracking-widest text-on-surface-variant mb-6 block uppercase">Sommelier&apos;s Selection</span>
           <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 italic">The Wine List</h2>
           <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl mx-auto mb-12">
             Pair your meal with a selection from our cellar. From rare vintages to contemporary biodynamic discoveries, our collection is curated to elevate every flavor profile.
