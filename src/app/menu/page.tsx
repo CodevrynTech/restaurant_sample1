@@ -153,7 +153,7 @@ export default function Menu() {
               <img 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-[2000ms]" 
                 alt="Dark Chocolate Fondant" 
-                src="https://images.unsplash.com/photo-1414235077428-338988a2e8c0?auto=format&fit=crop&q=80&w=2560" 
+                src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=2560&auto=format&fit=crop" 
               />
             </div>
             <div className="flex justify-between items-baseline mb-4 w-full max-w-sm mx-auto border-b border-outline-variant/30 pb-4">
@@ -167,7 +167,7 @@ export default function Menu() {
               <img 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-[2000ms]" 
                 alt="Lemon Verbena Sorbet" 
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=2560" 
+                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=2560&auto=format&fit=crop" 
               />
             </div>
             <div className="flex justify-between items-baseline mb-4 w-full max-w-sm mx-auto border-b border-outline-variant/30 pb-4">
