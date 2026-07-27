@@ -71,7 +71,7 @@ export default function Events() {
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="absolute inset-0 overlay-dark"></div>
         </div>
-        <div className="relative z-10 text-center text-on-primary px-margin-mobile">
+        <div className="relative z-10 text-center text-on-primary px-6">
           <span className="text-label-caps font-label-caps mb-4 block tracking-[0.3em]">Exquisite Gatherings</span>
           <h1 className="text-display-lg-mobile md:text-display-lg font-display-lg mb-8 italic">Memorable Moments</h1>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
@@ -89,7 +89,7 @@ export default function Events() {
       </section>
 
       {/* Intro Narrative */}
-      <section className="section-padding px-margin-mobile md:px-margin-desktop max-w-[800px] mx-auto text-center reveal-fade opacity-0 translate-y-10 transition-all duration-1000">
+      <section className="section-padding px-6 md:px-20 max-w-[800px] mx-auto text-center reveal-fade opacity-0 translate-y-10 transition-all duration-1000">
         <p className="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
           At Lumira, we believe every gathering is a canvas for exceptional hospitality. From intimate dinners in our secluded library to grand celebrations in the garden, our dedicated events team orchestrates every detail with precision and grace, ensuring your occasion is as effortless as it is unforgettable.
         </p>

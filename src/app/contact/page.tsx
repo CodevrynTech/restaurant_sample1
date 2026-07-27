@@ -78,7 +78,7 @@ export default function Contact() {
             src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=2560" 
           />
         </div>
-        <div className="relative z-20 text-center text-white px-margin-mobile">
+        <div className="relative z-20 text-center text-white px-6">
           <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4">Get in Touch</h1>
           <p className="font-label-caps text-label-caps tracking-widest uppercase opacity-80">Refined Hospitality in the Heart of Monaco</p>
         </div>
@@ -202,7 +202,7 @@ export default function Contact() {
 
       {/* FAQ Section */}
       <section className="bg-surface-container section-padding reveal-section">
-        <div className="max-w-[800px] mx-auto px-margin-mobile">
+        <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-headline-md text-headline-md mb-4">Frequently Asked Questions</h2>
             <p className="text-on-surface-variant">Common inquiries to assist your journey to Lumira.</p>
